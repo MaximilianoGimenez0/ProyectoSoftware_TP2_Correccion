@@ -3,36 +3,88 @@
   "WorkspaceRootPath": "C:\\Users\\Maxi\\Desktop\\Proyecto\\ProyectoSoftware_TP2_Correcci\u00F3n\\ProyectoSoftware_TP2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2B6F3060-2C04-485C-8927-E1980540C3BA}|Application\\Application.csproj|c:\\users\\maxi\\desktop\\proyecto\\proyectosoftware_tp2_correcci\u00F3n\\proyectosoftware_tp2\\application\\services\\projectproposalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2B6F3060-2C04-485C-8927-E1980540C3BA}|Application\\Application.csproj|solutionrelative:application\\services\\projectproposalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{2B6F3060-2C04-485C-8927-E1980540C3BA}|Application\\Application.csproj|c:\\users\\maxi\\desktop\\proyecto\\proyectosoftware_tp2_correcci\u00F3n\\proyectosoftware_tp2\\application\\services\\projectapprovalstepservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2B6F3060-2C04-485C-8927-E1980540C3BA}|Application\\Application.csproj|solutionrelative:application\\services\\projectapprovalstepservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2B6F3060-2C04-485C-8927-E1980540C3BA}|Application\\Application.csproj|c:\\users\\maxi\\desktop\\proyecto\\proyectosoftware_tp2_correcci\u00F3n\\proyectosoftware_tp2\\application\\services\\projecttypeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2B6F3060-2C04-485C-8927-E1980540C3BA}|Application\\Application.csproj|solutionrelative:application\\services\\projecttypeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2B6F3060-2C04-485C-8927-E1980540C3BA}|Application\\Application.csproj|c:\\users\\maxi\\desktop\\proyecto\\proyectosoftware_tp2_correcci\u00F3n\\proyectosoftware_tp2\\application\\services\\projectproposalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B6F3060-2C04-485C-8927-E1980540C3BA}|Application\\Application.csproj|solutionrelative:application\\services\\projectproposalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A6252172-5A46-48C2-A113-2BC911668C09}|WebApplication1\\WebApplication.csproj|c:\\users\\maxi\\desktop\\proyecto\\proyectosoftware_tp2_correcci\u00F3n\\proyectosoftware_tp2\\webapplication1\\controllers\\projectcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A6252172-5A46-48C2-A113-2BC911668C09}|WebApplication1\\WebApplication.csproj|solutionrelative:webapplication1\\controllers\\projectcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2B6F3060-2C04-485C-8927-E1980540C3BA}|Application\\Application.csproj|c:\\users\\maxi\\desktop\\proyecto\\proyectosoftware_tp2_correcci\u00F3n\\proyectosoftware_tp2\\application\\validators\\projectproposalvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2B6F3060-2C04-485C-8927-E1980540C3BA}|Application\\Application.csproj|solutionrelative:application\\validators\\projectproposalvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A6252172-5A46-48C2-A113-2BC911668C09}|WebApplication1\\WebApplication.csproj|c:\\users\\maxi\\desktop\\proyecto\\proyectosoftware_tp2_correcci\u00F3n\\proyectosoftware_tp2\\webapplication1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A6252172-5A46-48C2-A113-2BC911668C09}|WebApplication1\\WebApplication.csproj|solutionrelative:webapplication1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9FCA4A87-EBF2-4692-91D0-E6354B826781}|Infrastructure\\Infrastructure.csproj|c:\\users\\maxi\\desktop\\proyecto\\proyectosoftware_tp2_correcci\u00F3n\\proyectosoftware_tp2\\infrastructure\\persistence\\repositories\\projectapprovalsteprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FCA4A87-EBF2-4692-91D0-E6354B826781}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\persistence\\repositories\\projectapprovalsteprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9FCA4A87-EBF2-4692-91D0-E6354B826781}|Infrastructure\\Infrastructure.csproj|c:\\users\\maxi\\desktop\\proyecto\\proyectosoftware_tp2_correcci\u00F3n\\proyectosoftware_tp2\\infrastructure\\persistence\\repositories\\projectproposalrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9FCA4A87-EBF2-4692-91D0-E6354B826781}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\persistence\\repositories\\projectproposalrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{D6E3D805-3918-4657-9E33-6DB3A57E2A8A}|Domain\\Domain.csproj|c:\\users\\maxi\\desktop\\proyecto\\proyectosoftware_tp2_correcci\u00F3n\\proyectosoftware_tp2\\domain\\entities\\projectapprovalstep.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6E3D805-3918-4657-9E33-6DB3A57E2A8A}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\projectapprovalstep.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{D6E3D805-3918-4657-9E33-6DB3A57E2A8A}|Domain\\Domain.csproj|c:\\users\\maxi\\desktop\\proyecto\\proyectosoftware_tp2_correcci\u00F3n\\proyectosoftware_tp2\\domain\\entities\\projectproposal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D6E3D805-3918-4657-9E33-6DB3A57E2A8A}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\projectproposal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6252172-5A46-48C2-A113-2BC911668C09}|WebApplication1\\WebApplication.csproj|c:\\users\\maxi\\desktop\\proyecto\\proyectosoftware_tp2_correcci\u00F3n\\proyectosoftware_tp2\\webapplication1\\controllers\\projectcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6252172-5A46-48C2-A113-2BC911668C09}|WebApplication1\\WebApplication.csproj|solutionrelative:webapplication1\\controllers\\projectcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B6F3060-2C04-485C-8927-E1980540C3BA}|Application\\Application.csproj|c:\\users\\maxi\\desktop\\proyecto\\proyectosoftware_tp2_correcci\u00F3n\\proyectosoftware_tp2\\application\\interfaces\\services\\iprojectapprovalstepservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B6F3060-2C04-485C-8927-E1980540C3BA}|Application\\Application.csproj|solutionrelative:application\\interfaces\\services\\iprojectapprovalstepservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B6F3060-2C04-485C-8927-E1980540C3BA}|Application\\Application.csproj|c:\\users\\maxi\\desktop\\proyecto\\proyectosoftware_tp2_correcci\u00F3n\\proyectosoftware_tp2\\application\\interfaces\\services\\iprojectproposalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B6F3060-2C04-485C-8927-E1980540C3BA}|Application\\Application.csproj|solutionrelative:application\\interfaces\\services\\iprojectproposalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B6F3060-2C04-485C-8927-E1980540C3BA}|Application\\Application.csproj|c:\\users\\maxi\\desktop\\proyecto\\proyectosoftware_tp2_correcci\u00F3n\\proyectosoftware_tp2\\application\\projectapprovalsteps\\commands\\update\\projectapprovalstepupdatecmd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B6F3060-2C04-485C-8927-E1980540C3BA}|Application\\Application.csproj|solutionrelative:application\\projectapprovalsteps\\commands\\update\\projectapprovalstepupdatecmd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B6F3060-2C04-485C-8927-E1980540C3BA}|Application\\Application.csproj|c:\\users\\maxi\\desktop\\proyecto\\proyectosoftware_tp2_correcci\u00F3n\\proyectosoftware_tp2\\application\\projectapprovalsteps\\commands\\update\\projectapprovalstepupdatecmdhndlr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B6F3060-2C04-485C-8927-E1980540C3BA}|Application\\Application.csproj|solutionrelative:application\\projectapprovalsteps\\commands\\update\\projectapprovalstepupdatecmdhndlr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6252172-5A46-48C2-A113-2BC911668C09}|WebApplication1\\WebApplication.csproj|c:\\users\\maxi\\desktop\\proyecto\\proyectosoftware_tp2_correcci\u00F3n\\proyectosoftware_tp2\\webapplication1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6252172-5A46-48C2-A113-2BC911668C09}|WebApplication1\\WebApplication.csproj|solutionrelative:webapplication1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6252172-5A46-48C2-A113-2BC911668C09}|WebApplication1\\WebApplication.csproj|c:\\users\\maxi\\desktop\\proyecto\\proyectosoftware_tp2_correcci\u00F3n\\proyectosoftware_tp2\\webapplication1\\controllers\\informationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6252172-5A46-48C2-A113-2BC911668C09}|WebApplication1\\WebApplication.csproj|solutionrelative:webapplication1\\controllers\\informationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B6F3060-2C04-485C-8927-E1980540C3BA}|Application\\Application.csproj|c:\\users\\maxi\\desktop\\proyecto\\proyectosoftware_tp2_correcci\u00F3n\\proyectosoftware_tp2\\application\\dtos\\requests\\projectproposalcreaterequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B6F3060-2C04-485C-8927-E1980540C3BA}|Application\\Application.csproj|solutionrelative:application\\dtos\\requests\\projectproposalcreaterequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FCA4A87-EBF2-4692-91D0-E6354B826781}|Infrastructure\\Infrastructure.csproj|c:\\users\\maxi\\desktop\\proyecto\\proyectosoftware_tp2_correcci\u00F3n\\proyectosoftware_tp2\\infrastructure\\persistence\\repositories\\projecttyperepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FCA4A87-EBF2-4692-91D0-E6354B826781}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\persistence\\repositories\\projecttyperepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B6F3060-2C04-485C-8927-E1980540C3BA}|Application\\Application.csproj|c:\\users\\maxi\\desktop\\proyecto\\proyectosoftware_tp2_correcci\u00F3n\\proyectosoftware_tp2\\application\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B6F3060-2C04-485C-8927-E1980540C3BA}|Application\\Application.csproj|solutionrelative:application\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B6F3060-2C04-485C-8927-E1980540C3BA}|Application\\Application.csproj|c:\\users\\maxi\\desktop\\proyecto\\proyectosoftware_tp2_correcci\u00F3n\\proyectosoftware_tp2\\application\\services\\projecttypeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B6F3060-2C04-485C-8927-E1980540C3BA}|Application\\Application.csproj|solutionrelative:application\\services\\projecttypeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B6F3060-2C04-485C-8927-E1980540C3BA}|Application\\Application.csproj|c:\\users\\maxi\\desktop\\proyecto\\proyectosoftware_tp2_correcci\u00F3n\\proyectosoftware_tp2\\application\\services\\approverroleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B6F3060-2C04-485C-8927-E1980540C3BA}|Application\\Application.csproj|solutionrelative:application\\services\\approverroleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B6F3060-2C04-485C-8927-E1980540C3BA}|Application\\Application.csproj|c:\\users\\maxi\\desktop\\proyecto\\proyectosoftware_tp2_correcci\u00F3n\\proyectosoftware_tp2\\application\\services\\approvalstatusservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B6F3060-2C04-485C-8927-E1980540C3BA}|Application\\Application.csproj|solutionrelative:application\\services\\approvalstatusservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B6F3060-2C04-485C-8927-E1980540C3BA}|Application\\Application.csproj|c:\\users\\maxi\\desktop\\proyecto\\proyectosoftware_tp2_correcci\u00F3n\\proyectosoftware_tp2\\application\\services\\areaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B6F3060-2C04-485C-8927-E1980540C3BA}|Application\\Application.csproj|solutionrelative:application\\services\\areaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B6F3060-2C04-485C-8927-E1980540C3BA}|Application\\Application.csproj|c:\\users\\maxi\\desktop\\proyecto\\proyectosoftware_tp2_correcci\u00F3n\\proyectosoftware_tp2\\application\\validators\\projectproposalvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B6F3060-2C04-485C-8927-E1980540C3BA}|Application\\Application.csproj|solutionrelative:application\\validators\\projectproposalvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2B6F3060-2C04-485C-8927-E1980540C3BA}|Application\\Application.csproj|c:\\users\\maxi\\desktop\\proyecto\\proyectosoftware_tp2_correcci\u00F3n\\proyectosoftware_tp2\\application\\dtos\\requests\\projectupdaterequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -51,10 +103,6 @@
       "RelativeMoniker": "D:0:0:{2B6F3060-2C04-485C-8927-E1980540C3BA}|Application\\Application.csproj|solutionrelative:application\\dtos\\responses\\projectresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2B6F3060-2C04-485C-8927-E1980540C3BA}|Application\\Application.csproj|c:\\users\\maxi\\desktop\\proyecto\\proyectosoftware_tp2_correcci\u00F3n\\proyectosoftware_tp2\\application\\dtos\\requests\\projectproposalcreaterequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2B6F3060-2C04-485C-8927-E1980540C3BA}|Application\\Application.csproj|solutionrelative:application\\dtos\\requests\\projectproposalcreaterequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{2B6F3060-2C04-485C-8927-E1980540C3BA}|Application\\Application.csproj|c:\\users\\maxi\\desktop\\proyecto\\proyectosoftware_tp2_correcci\u00F3n\\proyectosoftware_tp2\\application\\dtos\\responses\\projectshortresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2B6F3060-2C04-485C-8927-E1980540C3BA}|Application\\Application.csproj|solutionrelative:application\\dtos\\responses\\projectshortresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -63,40 +111,12 @@
       "RelativeMoniker": "D:0:0:{2B6F3060-2C04-485C-8927-E1980540C3BA}|Application\\Application.csproj|solutionrelative:application\\dtos\\requests\\decisionstepupdaterequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D6E3D805-3918-4657-9E33-6DB3A57E2A8A}|Domain\\Domain.csproj|c:\\users\\maxi\\desktop\\proyecto\\proyectosoftware_tp2_correcci\u00F3n\\proyectosoftware_tp2\\domain\\entities\\projectapprovalstep.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D6E3D805-3918-4657-9E33-6DB3A57E2A8A}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\projectapprovalstep.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2B6F3060-2C04-485C-8927-E1980540C3BA}|Application\\Application.csproj|c:\\users\\maxi\\desktop\\proyecto\\proyectosoftware_tp2_correcci\u00F3n\\proyectosoftware_tp2\\application\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2B6F3060-2C04-485C-8927-E1980540C3BA}|Application\\Application.csproj|solutionrelative:application\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{2B6F3060-2C04-485C-8927-E1980540C3BA}|Application\\Application.csproj|c:\\users\\maxi\\desktop\\proyecto\\proyectosoftware_tp2_correcci\u00F3n\\proyectosoftware_tp2\\application\\dtos\\responses\\usersresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2B6F3060-2C04-485C-8927-E1980540C3BA}|Application\\Application.csproj|solutionrelative:application\\dtos\\responses\\usersresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2B6F3060-2C04-485C-8927-E1980540C3BA}|Application\\Application.csproj|c:\\users\\maxi\\desktop\\proyecto\\proyectosoftware_tp2_correcci\u00F3n\\proyectosoftware_tp2\\application\\dtos\\responses\\apierrorresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2B6F3060-2C04-485C-8927-E1980540C3BA}|Application\\Application.csproj|solutionrelative:application\\dtos\\responses\\apierrorresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2B6F3060-2C04-485C-8927-E1980540C3BA}|Application\\Application.csproj|c:\\users\\maxi\\desktop\\proyecto\\proyectosoftware_tp2_correcci\u00F3n\\proyectosoftware_tp2\\application\\services\\areaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2B6F3060-2C04-485C-8927-E1980540C3BA}|Application\\Application.csproj|solutionrelative:application\\services\\areaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2B6F3060-2C04-485C-8927-E1980540C3BA}|Application\\Application.csproj|c:\\users\\maxi\\desktop\\proyecto\\proyectosoftware_tp2_correcci\u00F3n\\proyectosoftware_tp2\\application\\services\\approverroleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2B6F3060-2C04-485C-8927-E1980540C3BA}|Application\\Application.csproj|solutionrelative:application\\services\\approverroleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2B6F3060-2C04-485C-8927-E1980540C3BA}|Application\\Application.csproj|c:\\users\\maxi\\desktop\\proyecto\\proyectosoftware_tp2_correcci\u00F3n\\proyectosoftware_tp2\\application\\services\\approvalstatusservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2B6F3060-2C04-485C-8927-E1980540C3BA}|Application\\Application.csproj|solutionrelative:application\\services\\approvalstatusservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A6252172-5A46-48C2-A113-2BC911668C09}|WebApplication1\\WebApplication.csproj|c:\\users\\maxi\\desktop\\proyecto\\proyectosoftware_tp2_correcci\u00F3n\\proyectosoftware_tp2\\webapplication1\\controllers\\informationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A6252172-5A46-48C2-A113-2BC911668C09}|WebApplication1\\WebApplication.csproj|solutionrelative:webapplication1\\controllers\\informationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2B6F3060-2C04-485C-8927-E1980540C3BA}|Application\\Application.csproj|c:\\users\\maxi\\desktop\\proyecto\\proyectosoftware_tp2_correcci\u00F3n\\proyectosoftware_tp2\\application\\interfaces\\services\\iprojectproposalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2B6F3060-2C04-485C-8927-E1980540C3BA}|Application\\Application.csproj|solutionrelative:application\\interfaces\\services\\iprojectproposalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2B6F3060-2C04-485C-8927-E1980540C3BA}|Application\\Application.csproj|c:\\users\\maxi\\desktop\\proyecto\\proyectosoftware_tp2_correcci\u00F3n\\proyectosoftware_tp2\\application\\users\\queries\\getbyid\\usergetbyidqryhndlr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -123,16 +143,8 @@
       "RelativeMoniker": "D:0:0:{2B6F3060-2C04-485C-8927-E1980540C3BA}|Application\\Application.csproj|solutionrelative:application\\exceptions\\notfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2B6F3060-2C04-485C-8927-E1980540C3BA}|Application\\Application.csproj|c:\\users\\maxi\\desktop\\proyecto\\proyectosoftware_tp2_correcci\u00F3n\\proyectosoftware_tp2\\application\\projectapprovalsteps\\commands\\update\\projectapprovalstepupdatecmdhndlr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2B6F3060-2C04-485C-8927-E1980540C3BA}|Application\\Application.csproj|solutionrelative:application\\projectapprovalsteps\\commands\\update\\projectapprovalstepupdatecmdhndlr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{2B6F3060-2C04-485C-8927-E1980540C3BA}|Application\\Application.csproj|c:\\users\\maxi\\desktop\\proyecto\\proyectosoftware_tp2_correcci\u00F3n\\proyectosoftware_tp2\\application\\projectapprovalsteps\\queries\\getall\\projectapprovalstepgetallqryhndlr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2B6F3060-2C04-485C-8927-E1980540C3BA}|Application\\Application.csproj|solutionrelative:application\\projectapprovalsteps\\queries\\getall\\projectapprovalstepgetallqryhndlr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9FCA4A87-EBF2-4692-91D0-E6354B826781}|Infrastructure\\Infrastructure.csproj|c:\\users\\maxi\\desktop\\proyecto\\proyectosoftware_tp2_correcci\u00F3n\\proyectosoftware_tp2\\infrastructure\\persistence\\repositories\\projectapprovalsteprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9FCA4A87-EBF2-4692-91D0-E6354B826781}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\persistence\\repositories\\projectapprovalsteprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D6E3D805-3918-4657-9E33-6DB3A57E2A8A}|Domain\\Domain.csproj|c:\\users\\maxi\\desktop\\proyecto\\proyectosoftware_tp2_correcci\u00F3n\\proyectosoftware_tp2\\domain\\interfaces\\iprojectproposalrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -140,10 +152,6 @@
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Maxi\\AppData\\Local\\SourceServer\\73455b0ce346213fada61d441ed3c2af750dff949d3572799a2e59e0ce43f4c4\\ControllerBase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9FCA4A87-EBF2-4692-91D0-E6354B826781}|Infrastructure\\Infrastructure.csproj|c:\\users\\maxi\\desktop\\proyecto\\proyectosoftware_tp2_correcci\u00F3n\\proyectosoftware_tp2\\infrastructure\\persistence\\repositories\\projecttyperepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9FCA4A87-EBF2-4692-91D0-E6354B826781}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\persistence\\repositories\\projecttyperepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2B6F3060-2C04-485C-8927-E1980540C3BA}|Application\\Application.csproj|c:\\users\\maxi\\desktop\\proyecto\\proyectosoftware_tp2_correcci\u00F3n\\proyectosoftware_tp2\\application\\projectproposals\\commands\\add\\projectproposaladdcmdhndlr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -214,10 +222,6 @@
       "RelativeMoniker": "D:0:0:{2B6F3060-2C04-485C-8927-E1980540C3BA}|Application\\Application.csproj|solutionrelative:application\\approvalstatuses\\queries\\getall\\approvalstatusgetallqryhndlr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2B6F3060-2C04-485C-8927-E1980540C3BA}|Application\\Application.csproj|c:\\users\\maxi\\desktop\\proyecto\\proyectosoftware_tp2_correcci\u00F3n\\proyectosoftware_tp2\\application\\interfaces\\services\\iprojectapprovalstepservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2B6F3060-2C04-485C-8927-E1980540C3BA}|Application\\Application.csproj|solutionrelative:application\\interfaces\\services\\iprojectapprovalstepservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{2B6F3060-2C04-485C-8927-E1980540C3BA}|Application\\Application.csproj|c:\\users\\maxi\\desktop\\proyecto\\proyectosoftware_tp2_correcci\u00F3n\\proyectosoftware_tp2\\application\\approvalrules\\queries\\getall\\approvalrulegetallqryhndler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2B6F3060-2C04-485C-8927-E1980540C3BA}|Application\\Application.csproj|solutionrelative:application\\approvalrules\\queries\\getall\\approvalrulegetallqryhndler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -264,10 +268,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{2B6F3060-2C04-485C-8927-E1980540C3BA}|Application\\Application.csproj|c:\\users\\maxi\\desktop\\proyecto\\proyectosoftware_tp2_correcci\u00F3n\\proyectosoftware_tp2\\application\\projectapprovalsteps\\queries\\getbyid\\projectapprovalstepgetbyidqryhndlr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2B6F3060-2C04-485C-8927-E1980540C3BA}|Application\\Application.csproj|solutionrelative:application\\projectapprovalsteps\\queries\\getbyid\\projectapprovalstepgetbyidqryhndlr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2B6F3060-2C04-485C-8927-E1980540C3BA}|Application\\Application.csproj|c:\\users\\maxi\\desktop\\proyecto\\proyectosoftware_tp2_correcci\u00F3n\\proyectosoftware_tp2\\application\\projectapprovalsteps\\commands\\update\\projectapprovalstepupdatecmd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2B6F3060-2C04-485C-8927-E1980540C3BA}|Application\\Application.csproj|solutionrelative:application\\projectapprovalsteps\\commands\\update\\projectapprovalstepupdatecmd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2B6F3060-2C04-485C-8927-E1980540C3BA}|Application\\Application.csproj|c:\\users\\maxi\\desktop\\proyecto\\proyectosoftware_tp2_correcci\u00F3n\\proyectosoftware_tp2\\application\\projectproposals\\commands\\update\\projectproposalupdatecmdhndlr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -453,76 +453,271 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ProjectProposalService.cs",
-              "DocumentMoniker": "C:\\Users\\Maxi\\Desktop\\Proyecto\\ProyectoSoftware_TP2_Correcci\u00F3n\\ProyectoSoftware_TP2\\Application\\Services\\ProjectProposalService.cs",
-              "RelativeDocumentMoniker": "Application\\Services\\ProjectProposalService.cs",
-              "ToolTip": "C:\\Users\\Maxi\\Desktop\\Proyecto\\ProyectoSoftware_TP2_Correcci\u00F3n\\ProyectoSoftware_TP2\\Application\\Services\\ProjectProposalService.cs",
-              "RelativeToolTip": "Application\\Services\\ProjectProposalService.cs",
-              "ViewState": "AgIAABUBAAAAAAAAAAAowAUBAAA7AAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "ProjectProposal.cs",
+              "DocumentMoniker": "C:\\Users\\Maxi\\Desktop\\Proyecto\\ProyectoSoftware_TP2_Correcci\u00F3n\\ProyectoSoftware_TP2\\Domain\\Entities\\ProjectProposal.cs",
+              "RelativeDocumentMoniker": "Domain\\Entities\\ProjectProposal.cs",
+              "ToolTip": "C:\\Users\\Maxi\\Desktop\\Proyecto\\ProyectoSoftware_TP2_Correcci\u00F3n\\ProyectoSoftware_TP2\\Domain\\Entities\\ProjectProposal.cs",
+              "RelativeToolTip": "Domain\\Entities\\ProjectProposal.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-25T06:45:09.05Z",
+              "WhenOpened": "2025-06-25T01:20:10.047Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ProjectApprovalStepRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Maxi\\Desktop\\Proyecto\\ProyectoSoftware_TP2_Correcci\u00F3n\\ProyectoSoftware_TP2\\Infrastructure\\Persistence\\Repositories\\ProjectApprovalStepRepository.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Persistence\\Repositories\\ProjectApprovalStepRepository.cs",
+              "ToolTip": "C:\\Users\\Maxi\\Desktop\\Proyecto\\ProyectoSoftware_TP2_Correcci\u00F3n\\ProyectoSoftware_TP2\\Infrastructure\\Persistence\\Repositories\\ProjectApprovalStepRepository.cs",
+              "RelativeToolTip": "Infrastructure\\Persistence\\Repositories\\ProjectApprovalStepRepository.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAlwDEAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T16:35:25.876Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "ProjectController.cs",
-              "DocumentMoniker": "C:\\Users\\Maxi\\Desktop\\Proyecto\\ProyectoSoftware_TP2_Correcci\u00F3n\\ProyectoSoftware_TP2\\WebApplication1\\Controllers\\ProjectController.cs",
-              "RelativeDocumentMoniker": "WebApplication1\\Controllers\\ProjectController.cs",
-              "ToolTip": "C:\\Users\\Maxi\\Desktop\\Proyecto\\ProyectoSoftware_TP2_Correcci\u00F3n\\ProyectoSoftware_TP2\\WebApplication1\\Controllers\\ProjectController.cs",
-              "RelativeToolTip": "WebApplication1\\Controllers\\ProjectController.cs",
-              "ViewState": "AgIAADMAAAAAAAAAAAAgwEQAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-26T17:16:11.979Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
               "Title": "ProjectProposalRepository.cs",
               "DocumentMoniker": "C:\\Users\\Maxi\\Desktop\\Proyecto\\ProyectoSoftware_TP2_Correcci\u00F3n\\ProyectoSoftware_TP2\\Infrastructure\\Persistence\\Repositories\\ProjectProposalRepository.cs",
               "RelativeDocumentMoniker": "Infrastructure\\Persistence\\Repositories\\ProjectProposalRepository.cs",
               "ToolTip": "C:\\Users\\Maxi\\Desktop\\Proyecto\\ProyectoSoftware_TP2_Correcci\u00F3n\\ProyectoSoftware_TP2\\Infrastructure\\Persistence\\Repositories\\ProjectProposalRepository.cs",
               "RelativeToolTip": "Infrastructure\\Persistence\\Repositories\\ProjectProposalRepository.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAYwBUAAABLAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-26T16:33:22.735Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
+              "Title": "ProjectApprovalStep.cs",
+              "DocumentMoniker": "C:\\Users\\Maxi\\Desktop\\Proyecto\\ProyectoSoftware_TP2_Correcci\u00F3n\\ProyectoSoftware_TP2\\Domain\\Entities\\ProjectApprovalStep.cs",
+              "RelativeDocumentMoniker": "Domain\\Entities\\ProjectApprovalStep.cs",
+              "ToolTip": "C:\\Users\\Maxi\\Desktop\\Proyecto\\ProyectoSoftware_TP2_Correcci\u00F3n\\ProyectoSoftware_TP2\\Domain\\Entities\\ProjectApprovalStep.cs",
+              "RelativeToolTip": "Domain\\Entities\\ProjectApprovalStep.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAxwBkAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-25T01:13:47.218Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProjectProposalService.cs",
+              "DocumentMoniker": "C:\\Users\\Maxi\\Desktop\\Proyecto\\ProyectoSoftware_TP2_Correcci\u00F3n\\ProyectoSoftware_TP2\\Application\\Services\\ProjectProposalService.cs",
+              "RelativeDocumentMoniker": "Application\\Services\\ProjectProposalService.cs",
+              "ToolTip": "C:\\Users\\Maxi\\Desktop\\Proyecto\\ProyectoSoftware_TP2_Correcci\u00F3n\\ProyectoSoftware_TP2\\Application\\Services\\ProjectProposalService.cs",
+              "RelativeToolTip": "Application\\Services\\ProjectProposalService.cs",
+              "ViewState": "AgIAAFgBAAAAAAAAAAAowGkBAABQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-25T06:45:09.05Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ProjectApprovalStepService.cs",
+              "DocumentMoniker": "C:\\Users\\Maxi\\Desktop\\Proyecto\\ProyectoSoftware_TP2_Correcci\u00F3n\\ProyectoSoftware_TP2\\Application\\Services\\ProjectApprovalStepService.cs",
+              "RelativeDocumentMoniker": "Application\\Services\\ProjectApprovalStepService.cs",
+              "ToolTip": "C:\\Users\\Maxi\\Desktop\\Proyecto\\ProyectoSoftware_TP2_Correcci\u00F3n\\ProyectoSoftware_TP2\\Application\\Services\\ProjectApprovalStepService.cs",
+              "RelativeToolTip": "Application\\Services\\ProjectApprovalStepService.cs",
+              "ViewState": "AgIAAGUAAAAAAAAAAAAjwFcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-24T17:37:20.319Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IProjectApprovalStepService.cs",
+              "DocumentMoniker": "C:\\Users\\Maxi\\Desktop\\Proyecto\\ProyectoSoftware_TP2_Correcci\u00F3n\\ProyectoSoftware_TP2\\Application\\Interfaces\\Services\\IProjectApprovalStepService.cs",
+              "RelativeDocumentMoniker": "Application\\Interfaces\\Services\\IProjectApprovalStepService.cs",
+              "ToolTip": "C:\\Users\\Maxi\\Desktop\\Proyecto\\ProyectoSoftware_TP2_Correcci\u00F3n\\ProyectoSoftware_TP2\\Application\\Interfaces\\Services\\IProjectApprovalStepService.cs",
+              "RelativeToolTip": "Application\\Interfaces\\Services\\IProjectApprovalStepService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T17:00:33.887Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ProjectController.cs",
+              "DocumentMoniker": "C:\\Users\\Maxi\\Desktop\\Proyecto\\ProyectoSoftware_TP2_Correcci\u00F3n\\ProyectoSoftware_TP2\\WebApplication1\\Controllers\\ProjectController.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Controllers\\ProjectController.cs",
+              "ToolTip": "C:\\Users\\Maxi\\Desktop\\Proyecto\\ProyectoSoftware_TP2_Correcci\u00F3n\\ProyectoSoftware_TP2\\WebApplication1\\Controllers\\ProjectController.cs",
+              "RelativeToolTip": "WebApplication1\\Controllers\\ProjectController.cs",
+              "ViewState": "AgIAAK8AAAAAAAAAAAAwwL8AAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T17:16:11.979Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ProjectApprovalStepUpdateCmd.cs",
+              "DocumentMoniker": "C:\\Users\\Maxi\\Desktop\\Proyecto\\ProyectoSoftware_TP2_Correcci\u00F3n\\ProyectoSoftware_TP2\\Application\\ProjectApprovalSteps\\Commands\\Update\\ProjectApprovalStepUpdateCmd.cs",
+              "RelativeDocumentMoniker": "Application\\ProjectApprovalSteps\\Commands\\Update\\ProjectApprovalStepUpdateCmd.cs",
+              "ToolTip": "C:\\Users\\Maxi\\Desktop\\Proyecto\\ProyectoSoftware_TP2_Correcci\u00F3n\\ProyectoSoftware_TP2\\Application\\ProjectApprovalSteps\\Commands\\Update\\ProjectApprovalStepUpdateCmd.cs",
+              "RelativeToolTip": "Application\\ProjectApprovalSteps\\Commands\\Update\\ProjectApprovalStepUpdateCmd.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-25T02:17:18.339Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IProjectProposalService.cs",
+              "DocumentMoniker": "C:\\Users\\Maxi\\Desktop\\Proyecto\\ProyectoSoftware_TP2_Correcci\u00F3n\\ProyectoSoftware_TP2\\Application\\Interfaces\\Services\\IProjectProposalService.cs",
+              "RelativeDocumentMoniker": "Application\\Interfaces\\Services\\IProjectProposalService.cs",
+              "ToolTip": "C:\\Users\\Maxi\\Desktop\\Proyecto\\ProyectoSoftware_TP2_Correcci\u00F3n\\ProyectoSoftware_TP2\\Application\\Interfaces\\Services\\IProjectProposalService.cs",
+              "RelativeToolTip": "Application\\Interfaces\\Services\\IProjectProposalService.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAowBMAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T17:01:18.433Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ProjectApprovalStepUpdateCmdHndlr.cs",
+              "DocumentMoniker": "C:\\Users\\Maxi\\Desktop\\Proyecto\\ProyectoSoftware_TP2_Correcci\u00F3n\\ProyectoSoftware_TP2\\Application\\ProjectApprovalSteps\\Commands\\Update\\ProjectApprovalStepUpdateCmdHndlr.cs",
+              "RelativeDocumentMoniker": "Application\\ProjectApprovalSteps\\Commands\\Update\\ProjectApprovalStepUpdateCmdHndlr.cs",
+              "ToolTip": "C:\\Users\\Maxi\\Desktop\\Proyecto\\ProyectoSoftware_TP2_Correcci\u00F3n\\ProyectoSoftware_TP2\\Application\\ProjectApprovalSteps\\Commands\\Update\\ProjectApprovalStepUpdateCmdHndlr.cs",
+              "RelativeToolTip": "Application\\ProjectApprovalSteps\\Commands\\Update\\ProjectApprovalStepUpdateCmdHndlr.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAB0AAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T16:54:40.3Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Maxi\\Desktop\\Proyecto\\ProyectoSoftware_TP2_Correcci\u00F3n\\ProyectoSoftware_TP2\\WebApplication1\\Program.cs",
               "RelativeDocumentMoniker": "WebApplication1\\Program.cs",
               "ToolTip": "C:\\Users\\Maxi\\Desktop\\Proyecto\\ProyectoSoftware_TP2_Correcci\u00F3n\\ProyectoSoftware_TP2\\WebApplication1\\Program.cs",
               "RelativeToolTip": "WebApplication1\\Program.cs",
-              "ViewState": "AgIAALEAAAAAAAAAAAAuwMcAAAArAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAowEcAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-26T16:09:56.943Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ProjectProposalValidator.cs",
-              "DocumentMoniker": "C:\\Users\\Maxi\\Desktop\\Proyecto\\ProyectoSoftware_TP2_Correcci\u00F3n\\ProyectoSoftware_TP2\\Application\\Validators\\ProjectProposalValidator.cs",
-              "RelativeDocumentMoniker": "Application\\Validators\\ProjectProposalValidator.cs",
-              "ToolTip": "C:\\Users\\Maxi\\Desktop\\Proyecto\\ProyectoSoftware_TP2_Correcci\u00F3n\\ProyectoSoftware_TP2\\Application\\Validators\\ProjectProposalValidator.cs",
-              "RelativeToolTip": "Application\\Validators\\ProjectProposalValidator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAiAAAAAAAAAA==",
+              "DocumentIndex": 12,
+              "Title": "InformationController.cs",
+              "DocumentMoniker": "C:\\Users\\Maxi\\Desktop\\Proyecto\\ProyectoSoftware_TP2_Correcci\u00F3n\\ProyectoSoftware_TP2\\WebApplication1\\Controllers\\InformationController.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Controllers\\InformationController.cs",
+              "ToolTip": "C:\\Users\\Maxi\\Desktop\\Proyecto\\ProyectoSoftware_TP2_Correcci\u00F3n\\ProyectoSoftware_TP2\\WebApplication1\\Controllers\\InformationController.cs",
+              "RelativeToolTip": "WebApplication1\\Controllers\\InformationController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-26T18:01:48.729Z",
+              "WhenOpened": "2025-05-26T17:13:51.791Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 13,
+              "Title": "ProjectProposalCreateRequest.cs",
+              "DocumentMoniker": "C:\\Users\\Maxi\\Desktop\\Proyecto\\ProyectoSoftware_TP2_Correcci\u00F3n\\ProyectoSoftware_TP2\\Application\\Dtos\\Requests\\ProjectProposalCreateRequest.cs",
+              "RelativeDocumentMoniker": "Application\\Dtos\\Requests\\ProjectProposalCreateRequest.cs",
+              "ToolTip": "C:\\Users\\Maxi\\Desktop\\Proyecto\\ProyectoSoftware_TP2_Correcci\u00F3n\\ProyectoSoftware_TP2\\Application\\Dtos\\Requests\\ProjectProposalCreateRequest.cs",
+              "RelativeToolTip": "Application\\Dtos\\Requests\\ProjectProposalCreateRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBwAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T23:25:47.18Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ProjectTypeRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Maxi\\Desktop\\Proyecto\\ProyectoSoftware_TP2_Correcci\u00F3n\\ProyectoSoftware_TP2\\Infrastructure\\Persistence\\Repositories\\ProjectTypeRepository.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Persistence\\Repositories\\ProjectTypeRepository.cs",
+              "ToolTip": "C:\\Users\\Maxi\\Desktop\\Proyecto\\ProyectoSoftware_TP2_Correcci\u00F3n\\ProyectoSoftware_TP2\\Infrastructure\\Persistence\\Repositories\\ProjectTypeRepository.cs",
+              "RelativeToolTip": "Infrastructure\\Persistence\\Repositories\\ProjectTypeRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T16:30:10.833Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Users\\Maxi\\Desktop\\Proyecto\\ProyectoSoftware_TP2_Correcci\u00F3n\\ProyectoSoftware_TP2\\Application\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "Application\\Services\\UserService.cs",
+              "ToolTip": "C:\\Users\\Maxi\\Desktop\\Proyecto\\ProyectoSoftware_TP2_Correcci\u00F3n\\ProyectoSoftware_TP2\\Application\\Services\\UserService.cs",
+              "RelativeToolTip": "Application\\Services\\UserService.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAIA8wC4AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T17:11:25.804Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ProjectTypeService.cs",
+              "DocumentMoniker": "C:\\Users\\Maxi\\Desktop\\Proyecto\\ProyectoSoftware_TP2_Correcci\u00F3n\\ProyectoSoftware_TP2\\Application\\Services\\ProjectTypeService.cs",
+              "RelativeDocumentMoniker": "Application\\Services\\ProjectTypeService.cs",
+              "ToolTip": "C:\\Users\\Maxi\\Desktop\\Proyecto\\ProyectoSoftware_TP2_Correcci\u00F3n\\ProyectoSoftware_TP2\\Application\\Services\\ProjectTypeService.cs",
+              "RelativeToolTip": "Application\\Services\\ProjectTypeService.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAABYAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T17:11:13.709Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ApproverRoleService.cs",
+              "DocumentMoniker": "C:\\Users\\Maxi\\Desktop\\Proyecto\\ProyectoSoftware_TP2_Correcci\u00F3n\\ProyectoSoftware_TP2\\Application\\Services\\ApproverRoleService.cs",
+              "RelativeDocumentMoniker": "Application\\Services\\ApproverRoleService.cs",
+              "ToolTip": "C:\\Users\\Maxi\\Desktop\\Proyecto\\ProyectoSoftware_TP2_Correcci\u00F3n\\ProyectoSoftware_TP2\\Application\\Services\\ApproverRoleService.cs",
+              "RelativeToolTip": "Application\\Services\\ApproverRoleService.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAEwCIAAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T17:03:27.471Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ApprovalStatusService.cs",
+              "DocumentMoniker": "C:\\Users\\Maxi\\Desktop\\Proyecto\\ProyectoSoftware_TP2_Correcci\u00F3n\\ProyectoSoftware_TP2\\Application\\Services\\ApprovalStatusService.cs",
+              "RelativeDocumentMoniker": "Application\\Services\\ApprovalStatusService.cs",
+              "ToolTip": "C:\\Users\\Maxi\\Desktop\\Proyecto\\ProyectoSoftware_TP2_Correcci\u00F3n\\ProyectoSoftware_TP2\\Application\\Services\\ApprovalStatusService.cs",
+              "RelativeToolTip": "Application\\Services\\ApprovalStatusService.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAEwB4AAABNAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T17:03:05.432Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "AreaService.cs",
+              "DocumentMoniker": "C:\\Users\\Maxi\\Desktop\\Proyecto\\ProyectoSoftware_TP2_Correcci\u00F3n\\ProyectoSoftware_TP2\\Application\\Services\\AreaService.cs",
+              "RelativeDocumentMoniker": "Application\\Services\\AreaService.cs",
+              "ToolTip": "C:\\Users\\Maxi\\Desktop\\Proyecto\\ProyectoSoftware_TP2_Correcci\u00F3n\\ProyectoSoftware_TP2\\Application\\Services\\AreaService.cs",
+              "RelativeToolTip": "Application\\Services\\AreaService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T16:10:16.636Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
               "Title": "ProjectUpdateRequest.cs",
               "DocumentMoniker": "C:\\Users\\Maxi\\Desktop\\Proyecto\\ProyectoSoftware_TP2_Correcci\u00F3n\\ProyectoSoftware_TP2\\Application\\Dtos\\Requests\\ProjectUpdateRequest.cs",
               "RelativeDocumentMoniker": "Application\\Dtos\\Requests\\ProjectUpdateRequest.cs",
@@ -534,46 +729,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ProjectTypeService.cs",
-              "DocumentMoniker": "C:\\Users\\Maxi\\Desktop\\Proyecto\\ProyectoSoftware_TP2_Correcci\u00F3n\\ProyectoSoftware_TP2\\Application\\Services\\ProjectTypeService.cs",
-              "RelativeDocumentMoniker": "Application\\Services\\ProjectTypeService.cs",
-              "ToolTip": "C:\\Users\\Maxi\\Desktop\\Proyecto\\ProyectoSoftware_TP2_Correcci\u00F3n\\ProyectoSoftware_TP2\\Application\\Services\\ProjectTypeService.cs",
-              "RelativeToolTip": "Application\\Services\\ProjectTypeService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAA9AAAAAAAAAA==",
+              "DocumentIndex": 20,
+              "Title": "ProjectProposalValidator.cs",
+              "DocumentMoniker": "C:\\Users\\Maxi\\Desktop\\Proyecto\\ProyectoSoftware_TP2_Correcci\u00F3n\\ProyectoSoftware_TP2\\Application\\Validators\\ProjectProposalValidator.cs",
+              "RelativeDocumentMoniker": "Application\\Validators\\ProjectProposalValidator.cs",
+              "ToolTip": "C:\\Users\\Maxi\\Desktop\\Proyecto\\ProyectoSoftware_TP2_Correcci\u00F3n\\ProyectoSoftware_TP2\\Application\\Validators\\ProjectProposalValidator.cs",
+              "RelativeToolTip": "Application\\Validators\\ProjectProposalValidator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-26T17:11:13.709Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-26T18:01:48.729Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ProjectApprovalStepService.cs",
-              "DocumentMoniker": "C:\\Users\\Maxi\\Desktop\\Proyecto\\ProyectoSoftware_TP2_Correcci\u00F3n\\ProyectoSoftware_TP2\\Application\\Services\\ProjectApprovalStepService.cs",
-              "RelativeDocumentMoniker": "Application\\Services\\ProjectApprovalStepService.cs",
-              "ToolTip": "C:\\Users\\Maxi\\Desktop\\Proyecto\\ProyectoSoftware_TP2_Correcci\u00F3n\\ProyectoSoftware_TP2\\Application\\Services\\ProjectApprovalStepService.cs",
-              "RelativeToolTip": "Application\\Services\\ProjectApprovalStepService.cs",
-              "ViewState": "AgIAAHcAAAAAAAAAAAAnwJgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-24T17:37:20.319Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ProjectProposal.cs",
-              "DocumentMoniker": "C:\\Users\\Maxi\\Desktop\\Proyecto\\ProyectoSoftware_TP2_Correcci\u00F3n\\ProyectoSoftware_TP2\\Domain\\Entities\\ProjectProposal.cs",
-              "RelativeDocumentMoniker": "Domain\\Entities\\ProjectProposal.cs",
-              "ToolTip": "C:\\Users\\Maxi\\Desktop\\Proyecto\\ProyectoSoftware_TP2_Correcci\u00F3n\\ProyectoSoftware_TP2\\Domain\\Entities\\ProjectProposal.cs",
-              "RelativeToolTip": "Domain\\Entities\\ProjectProposal.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAcwCMAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-25T01:20:10.047Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 23,
               "Title": "ApprovalStepResponse.cs",
               "DocumentMoniker": "C:\\Users\\Maxi\\Desktop\\Proyecto\\ProyectoSoftware_TP2_Correcci\u00F3n\\ProyectoSoftware_TP2\\Application\\Dtos\\Responses\\ApprovalStepResponse.cs",
               "RelativeDocumentMoniker": "Application\\Dtos\\Responses\\ApprovalStepResponse.cs",
@@ -585,7 +753,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 25,
               "Title": "ProjectShortResponse.cs",
               "DocumentMoniker": "C:\\Users\\Maxi\\Desktop\\Proyecto\\ProyectoSoftware_TP2_Correcci\u00F3n\\ProyectoSoftware_TP2\\Application\\Dtos\\Responses\\ProjectShortResponse.cs",
               "RelativeDocumentMoniker": "Application\\Dtos\\Responses\\ProjectShortResponse.cs",
@@ -597,7 +765,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 24,
               "Title": "ProjectResponse.cs",
               "DocumentMoniker": "C:\\Users\\Maxi\\Desktop\\Proyecto\\ProyectoSoftware_TP2_Correcci\u00F3n\\ProyectoSoftware_TP2\\Application\\Dtos\\Responses\\ProjectResponse.cs",
               "RelativeDocumentMoniker": "Application\\Dtos\\Responses\\ProjectResponse.cs",
@@ -609,19 +777,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "ProjectApprovalStep.cs",
-              "DocumentMoniker": "C:\\Users\\Maxi\\Desktop\\Proyecto\\ProyectoSoftware_TP2_Correcci\u00F3n\\ProyectoSoftware_TP2\\Domain\\Entities\\ProjectApprovalStep.cs",
-              "RelativeDocumentMoniker": "Domain\\Entities\\ProjectApprovalStep.cs",
-              "ToolTip": "C:\\Users\\Maxi\\Desktop\\Proyecto\\ProyectoSoftware_TP2_Correcci\u00F3n\\ProyectoSoftware_TP2\\Domain\\Entities\\ProjectApprovalStep.cs",
-              "RelativeToolTip": "Domain\\Entities\\ProjectApprovalStep.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAoAAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-25T01:13:47.218Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 22,
               "Title": "GenericResponse.cs",
               "DocumentMoniker": "C:\\Users\\Maxi\\Desktop\\Proyecto\\ProyectoSoftware_TP2_Correcci\u00F3n\\ProyectoSoftware_TP2\\Application\\Dtos\\Responses\\GenericResponse.cs",
               "RelativeDocumentMoniker": "Application\\Dtos\\Responses\\GenericResponse.cs",
@@ -633,7 +789,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 26,
               "Title": "DecisionStepUpdateRequest.cs",
               "DocumentMoniker": "C:\\Users\\Maxi\\Desktop\\Proyecto\\ProyectoSoftware_TP2_Correcci\u00F3n\\ProyectoSoftware_TP2\\Application\\Dtos\\Requests\\DecisionStepUpdateRequest.cs",
               "RelativeDocumentMoniker": "Application\\Dtos\\Requests\\DecisionStepUpdateRequest.cs",
@@ -645,19 +801,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "ProjectProposalCreateRequest.cs",
-              "DocumentMoniker": "C:\\Users\\Maxi\\Desktop\\Proyecto\\ProyectoSoftware_TP2_Correcci\u00F3n\\ProyectoSoftware_TP2\\Application\\Dtos\\Requests\\ProjectProposalCreateRequest.cs",
-              "RelativeDocumentMoniker": "Application\\Dtos\\Requests\\ProjectProposalCreateRequest.cs",
-              "ToolTip": "C:\\Users\\Maxi\\Desktop\\Proyecto\\ProyectoSoftware_TP2_Correcci\u00F3n\\ProyectoSoftware_TP2\\Application\\Dtos\\Requests\\ProjectProposalCreateRequest.cs",
-              "RelativeToolTip": "Application\\Dtos\\Requests\\ProjectProposalCreateRequest.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABwAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-26T23:25:47.18Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 27,
               "Title": "UsersResponse.cs",
               "DocumentMoniker": "C:\\Users\\Maxi\\Desktop\\Proyecto\\ProyectoSoftware_TP2_Correcci\u00F3n\\ProyectoSoftware_TP2\\Application\\Dtos\\Responses\\UsersResponse.cs",
               "RelativeDocumentMoniker": "Application\\Dtos\\Responses\\UsersResponse.cs",
@@ -669,7 +813,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 28,
               "Title": "ApiErrorResponse.cs",
               "DocumentMoniker": "C:\\Users\\Maxi\\Desktop\\Proyecto\\ProyectoSoftware_TP2_Correcci\u00F3n\\ProyectoSoftware_TP2\\Application\\Dtos\\Responses\\ApiErrorResponse.cs",
               "RelativeDocumentMoniker": "Application\\Dtos\\Responses\\ApiErrorResponse.cs",
@@ -681,79 +825,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "UserService.cs",
-              "DocumentMoniker": "C:\\Users\\Maxi\\Desktop\\Proyecto\\ProyectoSoftware_TP2_Correcci\u00F3n\\ProyectoSoftware_TP2\\Application\\Services\\UserService.cs",
-              "RelativeDocumentMoniker": "Application\\Services\\UserService.cs",
-              "ToolTip": "C:\\Users\\Maxi\\Desktop\\Proyecto\\ProyectoSoftware_TP2_Correcci\u00F3n\\ProyectoSoftware_TP2\\Application\\Services\\UserService.cs",
-              "RelativeToolTip": "Application\\Services\\UserService.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAEwC4AAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-26T17:11:25.804Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "AreaService.cs",
-              "DocumentMoniker": "C:\\Users\\Maxi\\Desktop\\Proyecto\\ProyectoSoftware_TP2_Correcci\u00F3n\\ProyectoSoftware_TP2\\Application\\Services\\AreaService.cs",
-              "RelativeDocumentMoniker": "Application\\Services\\AreaService.cs",
-              "ToolTip": "C:\\Users\\Maxi\\Desktop\\Proyecto\\ProyectoSoftware_TP2_Correcci\u00F3n\\ProyectoSoftware_TP2\\Application\\Services\\AreaService.cs",
-              "RelativeToolTip": "Application\\Services\\AreaService.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAawB0AAABJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-26T16:10:16.636Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "ApproverRoleService.cs",
-              "DocumentMoniker": "C:\\Users\\Maxi\\Desktop\\Proyecto\\ProyectoSoftware_TP2_Correcci\u00F3n\\ProyectoSoftware_TP2\\Application\\Services\\ApproverRoleService.cs",
-              "RelativeDocumentMoniker": "Application\\Services\\ApproverRoleService.cs",
-              "ToolTip": "C:\\Users\\Maxi\\Desktop\\Proyecto\\ProyectoSoftware_TP2_Correcci\u00F3n\\ProyectoSoftware_TP2\\Application\\Services\\ApproverRoleService.cs",
-              "RelativeToolTip": "Application\\Services\\ApproverRoleService.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAawCIAAABJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-26T17:03:27.471Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "ApprovalStatusService.cs",
-              "DocumentMoniker": "C:\\Users\\Maxi\\Desktop\\Proyecto\\ProyectoSoftware_TP2_Correcci\u00F3n\\ProyectoSoftware_TP2\\Application\\Services\\ApprovalStatusService.cs",
-              "RelativeDocumentMoniker": "Application\\Services\\ApprovalStatusService.cs",
-              "ToolTip": "C:\\Users\\Maxi\\Desktop\\Proyecto\\ProyectoSoftware_TP2_Correcci\u00F3n\\ProyectoSoftware_TP2\\Application\\Services\\ApprovalStatusService.cs",
-              "RelativeToolTip": "Application\\Services\\ApprovalStatusService.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAEwB4AAABNAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-26T17:03:05.432Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "IProjectProposalService.cs",
-              "DocumentMoniker": "C:\\Users\\Maxi\\Desktop\\Proyecto\\ProyectoSoftware_TP2_Correcci\u00F3n\\ProyectoSoftware_TP2\\Application\\Interfaces\\Services\\IProjectProposalService.cs",
-              "RelativeDocumentMoniker": "Application\\Interfaces\\Services\\IProjectProposalService.cs",
-              "ToolTip": "C:\\Users\\Maxi\\Desktop\\Proyecto\\ProyectoSoftware_TP2_Correcci\u00F3n\\ProyectoSoftware_TP2\\Application\\Interfaces\\Services\\IProjectProposalService.cs",
-              "RelativeToolTip": "Application\\Interfaces\\Services\\IProjectProposalService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-26T17:01:18.433Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "InformationController.cs",
-              "DocumentMoniker": "C:\\Users\\Maxi\\Desktop\\Proyecto\\ProyectoSoftware_TP2_Correcci\u00F3n\\ProyectoSoftware_TP2\\WebApplication1\\Controllers\\InformationController.cs",
-              "RelativeDocumentMoniker": "WebApplication1\\Controllers\\InformationController.cs",
-              "ToolTip": "C:\\Users\\Maxi\\Desktop\\Proyecto\\ProyectoSoftware_TP2_Correcci\u00F3n\\ProyectoSoftware_TP2\\WebApplication1\\Controllers\\InformationController.cs",
-              "RelativeToolTip": "WebApplication1\\Controllers\\InformationController.cs",
-              "ViewState": "AgIAAEgAAAAAAAAAAAAgwBAAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-26T17:13:51.791Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 30,
               "Title": "UserRepository.cs",
               "DocumentMoniker": "C:\\Users\\Maxi\\Desktop\\Proyecto\\ProyectoSoftware_TP2_Correcci\u00F3n\\ProyectoSoftware_TP2\\Infrastructure\\Persistence\\Repositories\\UserRepository.cs",
               "RelativeDocumentMoniker": "Infrastructure\\Persistence\\Repositories\\UserRepository.cs",
@@ -765,7 +837,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 29,
               "Title": "UserGetByIdQryHndlr.cs",
               "DocumentMoniker": "C:\\Users\\Maxi\\Desktop\\Proyecto\\ProyectoSoftware_TP2_Correcci\u00F3n\\ProyectoSoftware_TP2\\Application\\Users\\Queries\\GetById\\UserGetByIdQryHndlr.cs",
               "RelativeDocumentMoniker": "Application\\Users\\Queries\\GetById\\UserGetByIdQryHndlr.cs",
@@ -777,7 +849,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 31,
               "Title": "ProjectProposalGetByIdQryHndlr.cs",
               "DocumentMoniker": "C:\\Users\\Maxi\\Desktop\\Proyecto\\ProyectoSoftware_TP2_Correcci\u00F3n\\ProyectoSoftware_TP2\\Application\\ProjectProposals\\Queries\\GetById\\ProjectProposalGetByIdQryHndlr.cs",
               "RelativeDocumentMoniker": "Application\\ProjectProposals\\Queries\\GetById\\ProjectProposalGetByIdQryHndlr.cs",
@@ -789,7 +861,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 32,
               "Title": "BadRequestException.cs",
               "DocumentMoniker": "C:\\Users\\Maxi\\Desktop\\Proyecto\\ProyectoSoftware_TP2_Correcci\u00F3n\\ProyectoSoftware_TP2\\Application\\Exceptions\\BadRequestException.cs",
               "RelativeDocumentMoniker": "Application\\Exceptions\\BadRequestException.cs",
@@ -801,7 +873,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 33,
               "Title": "ConflictException.cs",
               "DocumentMoniker": "C:\\Users\\Maxi\\Desktop\\Proyecto\\ProyectoSoftware_TP2_Correcci\u00F3n\\ProyectoSoftware_TP2\\Application\\Exceptions\\ConflictException.cs",
               "RelativeDocumentMoniker": "Application\\Exceptions\\ConflictException.cs",
@@ -813,7 +885,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 34,
               "Title": "NotFoundException.cs",
               "DocumentMoniker": "C:\\Users\\Maxi\\Desktop\\Proyecto\\ProyectoSoftware_TP2_Correcci\u00F3n\\ProyectoSoftware_TP2\\Application\\Exceptions\\NotFoundException.cs",
               "RelativeDocumentMoniker": "Application\\Exceptions\\NotFoundException.cs",
@@ -825,31 +897,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "ProjectApprovalStepUpdateCmdHndlr.cs",
-              "DocumentMoniker": "C:\\Users\\Maxi\\Desktop\\Proyecto\\ProyectoSoftware_TP2_Correcci\u00F3n\\ProyectoSoftware_TP2\\Application\\ProjectApprovalSteps\\Commands\\Update\\ProjectApprovalStepUpdateCmdHndlr.cs",
-              "RelativeDocumentMoniker": "Application\\ProjectApprovalSteps\\Commands\\Update\\ProjectApprovalStepUpdateCmdHndlr.cs",
-              "ToolTip": "C:\\Users\\Maxi\\Desktop\\Proyecto\\ProyectoSoftware_TP2_Correcci\u00F3n\\ProyectoSoftware_TP2\\Application\\ProjectApprovalSteps\\Commands\\Update\\ProjectApprovalStepUpdateCmdHndlr.cs",
-              "RelativeToolTip": "Application\\ProjectApprovalSteps\\Commands\\Update\\ProjectApprovalStepUpdateCmdHndlr.cs",
-              "ViewState": "AgIAAD4AAAAAAAAAAADwv0cAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-26T16:54:40.3Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "ProjectApprovalStepRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Maxi\\Desktop\\Proyecto\\ProyectoSoftware_TP2_Correcci\u00F3n\\ProyectoSoftware_TP2\\Infrastructure\\Persistence\\Repositories\\ProjectApprovalStepRepository.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\Persistence\\Repositories\\ProjectApprovalStepRepository.cs",
-              "ToolTip": "C:\\Users\\Maxi\\Desktop\\Proyecto\\ProyectoSoftware_TP2_Correcci\u00F3n\\ProyectoSoftware_TP2\\Infrastructure\\Persistence\\Repositories\\ProjectApprovalStepRepository.cs",
-              "RelativeToolTip": "Infrastructure\\Persistence\\Repositories\\ProjectApprovalStepRepository.cs",
-              "ViewState": "AgIAACoAAAAAAAAAAADwvzYAAABCAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-26T16:35:25.876Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 35,
               "Title": "ProjectApprovalStepGetAllQryHndlr.cs",
               "DocumentMoniker": "C:\\Users\\Maxi\\Desktop\\Proyecto\\ProyectoSoftware_TP2_Correcci\u00F3n\\ProyectoSoftware_TP2\\Application\\ProjectApprovalSteps\\Queries\\GetAll\\ProjectApprovalStepGetAllQryHndlr.cs",
               "RelativeDocumentMoniker": "Application\\ProjectApprovalSteps\\Queries\\GetAll\\ProjectApprovalStepGetAllQryHndlr.cs",
@@ -861,7 +909,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 36,
               "Title": "IProjectProposalRepository.cs",
               "DocumentMoniker": "C:\\Users\\Maxi\\Desktop\\Proyecto\\ProyectoSoftware_TP2_Correcci\u00F3n\\ProyectoSoftware_TP2\\Domain\\Interfaces\\IProjectProposalRepository.cs",
               "RelativeDocumentMoniker": "Domain\\Interfaces\\IProjectProposalRepository.cs",
@@ -873,7 +921,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 37,
               "Title": "ControllerBase.cs",
               "DocumentMoniker": "C:\\Users\\Maxi\\AppData\\Local\\SourceServer\\73455b0ce346213fada61d441ed3c2af750dff949d3572799a2e59e0ce43f4c4\\ControllerBase.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Local\\SourceServer\\73455b0ce346213fada61d441ed3c2af750dff949d3572799a2e59e0ce43f4c4\\ControllerBase.cs",
@@ -885,19 +933,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
-              "Title": "ProjectTypeRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Maxi\\Desktop\\Proyecto\\ProyectoSoftware_TP2_Correcci\u00F3n\\ProyectoSoftware_TP2\\Infrastructure\\Persistence\\Repositories\\ProjectTypeRepository.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\Persistence\\Repositories\\ProjectTypeRepository.cs",
-              "ToolTip": "C:\\Users\\Maxi\\Desktop\\Proyecto\\ProyectoSoftware_TP2_Correcci\u00F3n\\ProyectoSoftware_TP2\\Infrastructure\\Persistence\\Repositories\\ProjectTypeRepository.cs",
-              "RelativeToolTip": "Infrastructure\\Persistence\\Repositories\\ProjectTypeRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEEAAABhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-26T16:30:10.833Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 38,
               "Title": "ProjectProposalAddCmdHndlr.cs",
               "DocumentMoniker": "C:\\Users\\Maxi\\Desktop\\Proyecto\\ProyectoSoftware_TP2_Correcci\u00F3n\\ProyectoSoftware_TP2\\Application\\ProjectProposals\\Commands\\Add\\ProjectProposalAddCmdHndlr.cs",
               "RelativeDocumentMoniker": "Application\\ProjectProposals\\Commands\\Add\\ProjectProposalAddCmdHndlr.cs",
@@ -909,7 +945,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 39,
               "Title": "ProjectTypeUpdateCmdHndlr.cs",
               "DocumentMoniker": "C:\\Users\\Maxi\\Desktop\\Proyecto\\ProyectoSoftware_TP2_Correcci\u00F3n\\ProyectoSoftware_TP2\\Application\\ProjectTypes\\Commands\\Update\\ProjectTypeUpdateCmdHndlr.cs",
               "RelativeDocumentMoniker": "Application\\ProjectTypes\\Commands\\Update\\ProjectTypeUpdateCmdHndlr.cs",
@@ -921,7 +957,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 41,
               "Title": "ProjectTypeCmdHndlr.cs",
               "DocumentMoniker": "C:\\Users\\Maxi\\Desktop\\Proyecto\\ProyectoSoftware_TP2_Correcci\u00F3n\\ProyectoSoftware_TP2\\Application\\ProjectTypes\\Commands\\Add\\ProjectTypeCmdHndlr.cs",
               "RelativeDocumentMoniker": "Application\\ProjectTypes\\Commands\\Add\\ProjectTypeCmdHndlr.cs",
@@ -933,7 +969,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 43,
               "Title": "IApproverRole.cs",
               "DocumentMoniker": "C:\\Users\\Maxi\\Desktop\\Proyecto\\ProyectoSoftware_TP2_Correcci\u00F3n\\ProyectoSoftware_TP2\\Application\\Interfaces\\Services\\IApproverRole.cs",
               "RelativeDocumentMoniker": "Application\\Interfaces\\Services\\IApproverRole.cs",
@@ -945,7 +981,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 42,
               "Title": "ProjectTypeCmd.cs",
               "DocumentMoniker": "C:\\Users\\Maxi\\Desktop\\Proyecto\\ProyectoSoftware_TP2_Correcci\u00F3n\\ProyectoSoftware_TP2\\Application\\ProjectTypes\\Commands\\Add\\ProjectTypeCmd.cs",
               "RelativeDocumentMoniker": "Application\\ProjectTypes\\Commands\\Add\\ProjectTypeCmd.cs",
@@ -957,7 +993,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 40,
               "Title": "ProjectTypeUpdateCmd.cs",
               "DocumentMoniker": "C:\\Users\\Maxi\\Desktop\\Proyecto\\ProyectoSoftware_TP2_Correcci\u00F3n\\ProyectoSoftware_TP2\\Application\\ProjectTypes\\Commands\\Update\\ProjectTypeUpdateCmd.cs",
               "RelativeDocumentMoniker": "Application\\ProjectTypes\\Commands\\Update\\ProjectTypeUpdateCmd.cs",
@@ -969,7 +1005,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 44,
               "Title": "ApproverRoleGetByIdQryHndlr.cs",
               "DocumentMoniker": "C:\\Users\\Maxi\\Desktop\\Proyecto\\ProyectoSoftware_TP2_Correcci\u00F3n\\ProyectoSoftware_TP2\\Application\\ApproverRoles\\Queries\\GetById\\ApproverRoleGetByIdQryHndlr.cs",
               "RelativeDocumentMoniker": "Application\\ApproverRoles\\Queries\\GetById\\ApproverRoleGetByIdQryHndlr.cs",
@@ -981,7 +1017,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 45,
               "Title": "ApproverRoleRepository.cs",
               "DocumentMoniker": "C:\\Users\\Maxi\\Desktop\\Proyecto\\ProyectoSoftware_TP2_Correcci\u00F3n\\ProyectoSoftware_TP2\\Infrastructure\\Persistence\\Repositories\\ApproverRoleRepository.cs",
               "RelativeDocumentMoniker": "Infrastructure\\Persistence\\Repositories\\ApproverRoleRepository.cs",
@@ -993,7 +1029,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 46,
               "Title": "AreaRepository.cs",
               "DocumentMoniker": "C:\\Users\\Maxi\\Desktop\\Proyecto\\ProyectoSoftware_TP2_Correcci\u00F3n\\ProyectoSoftware_TP2\\Infrastructure\\Persistence\\Repositories\\AreaRepository.cs",
               "RelativeDocumentMoniker": "Infrastructure\\Persistence\\Repositories\\AreaRepository.cs",
@@ -1005,7 +1041,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 47,
               "Title": "AreaGetAllQryHndlr.cs",
               "DocumentMoniker": "C:\\Users\\Maxi\\Desktop\\Proyecto\\ProyectoSoftware_TP2_Correcci\u00F3n\\ProyectoSoftware_TP2\\Application\\Areas\\Queries\\GetAll\\AreaGetAllQryHndlr.cs",
               "RelativeDocumentMoniker": "Application\\Areas\\Queries\\GetAll\\AreaGetAllQryHndlr.cs",
@@ -1017,7 +1053,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 48,
               "Title": "ApprovalStatusGetByIdQryHndlr.cs",
               "DocumentMoniker": "C:\\Users\\Maxi\\Desktop\\Proyecto\\ProyectoSoftware_TP2_Correcci\u00F3n\\ProyectoSoftware_TP2\\Application\\ApprovalStatuses\\Queries\\GetById\\ApprovalStatusGetByIdQryHndlr.cs",
               "RelativeDocumentMoniker": "Application\\ApprovalStatuses\\Queries\\GetById\\ApprovalStatusGetByIdQryHndlr.cs",
@@ -1029,7 +1065,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 49,
               "Title": "ProjectTypeGetAllQryHndlr.cs",
               "DocumentMoniker": "C:\\Users\\Maxi\\Desktop\\Proyecto\\ProyectoSoftware_TP2_Correcci\u00F3n\\ProyectoSoftware_TP2\\Application\\ProjectTypes\\Queries\\GetAll\\ProjectTypeGetAllQryHndlr.cs",
               "RelativeDocumentMoniker": "Application\\ProjectTypes\\Queries\\GetAll\\ProjectTypeGetAllQryHndlr.cs",
@@ -1041,7 +1077,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 50,
               "Title": "ProjectType.cs",
               "DocumentMoniker": "C:\\Users\\Maxi\\Desktop\\Proyecto\\ProyectoSoftware_TP2_Correcci\u00F3n\\ProyectoSoftware_TP2\\Domain\\Entities\\ProjectType.cs",
               "RelativeDocumentMoniker": "Domain\\Entities\\ProjectType.cs",
@@ -1053,7 +1089,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 51,
               "Title": "ProjectTypeGetByIdQryHndlr.cs",
               "DocumentMoniker": "C:\\Users\\Maxi\\Desktop\\Proyecto\\ProyectoSoftware_TP2_Correcci\u00F3n\\ProyectoSoftware_TP2\\Application\\ProjectTypes\\Queries\\GetById\\ProjectTypeGetByIdQryHndlr.cs",
               "RelativeDocumentMoniker": "Application\\ProjectTypes\\Queries\\GetById\\ProjectTypeGetByIdQryHndlr.cs",
@@ -1065,7 +1101,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 52,
               "Title": "ProjectProposalGetAllQryHndlr.cs",
               "DocumentMoniker": "C:\\Users\\Maxi\\Desktop\\Proyecto\\ProyectoSoftware_TP2_Correcci\u00F3n\\ProyectoSoftware_TP2\\Application\\ProjectProposals\\Queries\\GetAll\\ProjectProposalGetAllQryHndlr.cs",
               "RelativeDocumentMoniker": "Application\\ProjectProposals\\Queries\\GetAll\\ProjectProposalGetAllQryHndlr.cs",
@@ -1077,7 +1113,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 53,
               "Title": "UserGetAllQryHndlr.cs",
               "DocumentMoniker": "C:\\Users\\Maxi\\Desktop\\Proyecto\\ProyectoSoftware_TP2_Correcci\u00F3n\\ProyectoSoftware_TP2\\Application\\Users\\Queries\\GetAll\\UserGetAllQryHndlr.cs",
               "RelativeDocumentMoniker": "Application\\Users\\Queries\\GetAll\\UserGetAllQryHndlr.cs",
@@ -1089,7 +1125,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 54,
               "Title": "ApprovalStatusGetAllQryHndlr.cs",
               "DocumentMoniker": "C:\\Users\\Maxi\\Desktop\\Proyecto\\ProyectoSoftware_TP2_Correcci\u00F3n\\ProyectoSoftware_TP2\\Application\\ApprovalStatuses\\Queries\\GetAll\\ApprovalStatusGetAllQryHndlr.cs",
               "RelativeDocumentMoniker": "Application\\ApprovalStatuses\\Queries\\GetAll\\ApprovalStatusGetAllQryHndlr.cs",
@@ -1101,19 +1137,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
-              "Title": "IProjectApprovalStepService.cs",
-              "DocumentMoniker": "C:\\Users\\Maxi\\Desktop\\Proyecto\\ProyectoSoftware_TP2_Correcci\u00F3n\\ProyectoSoftware_TP2\\Application\\Interfaces\\Services\\IProjectApprovalStepService.cs",
-              "RelativeDocumentMoniker": "Application\\Interfaces\\Services\\IProjectApprovalStepService.cs",
-              "ToolTip": "C:\\Users\\Maxi\\Desktop\\Proyecto\\ProyectoSoftware_TP2_Correcci\u00F3n\\ProyectoSoftware_TP2\\Application\\Interfaces\\Services\\IProjectApprovalStepService.cs",
-              "RelativeToolTip": "Application\\Interfaces\\Services\\IProjectApprovalStepService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAwAAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-26T17:00:33.887Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 55,
               "Title": "ApprovalRuleGetAllQryHndler.cs",
               "DocumentMoniker": "C:\\Users\\Maxi\\Desktop\\Proyecto\\ProyectoSoftware_TP2_Correcci\u00F3n\\ProyectoSoftware_TP2\\Application\\ApprovalRules\\Queries\\GetAll\\ApprovalRuleGetAllQryHndler.cs",
               "RelativeDocumentMoniker": "Application\\ApprovalRules\\Queries\\GetAll\\ApprovalRuleGetAllQryHndler.cs",
@@ -1125,7 +1149,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 55,
+              "DocumentIndex": 56,
               "Title": "ApproverRoleGetAllQryHndlr.cs",
               "DocumentMoniker": "C:\\Users\\Maxi\\Desktop\\Proyecto\\ProyectoSoftware_TP2_Correcci\u00F3n\\ProyectoSoftware_TP2\\Application\\ApproverRoles\\Queries\\GetAll\\ApproverRoleGetAllQryHndlr.cs",
               "RelativeDocumentMoniker": "Application\\ApproverRoles\\Queries\\GetAll\\ApproverRoleGetAllQryHndlr.cs",
@@ -1137,7 +1161,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 56,
+              "DocumentIndex": 57,
               "Title": "ApproverRoleUpdateCmdHndlr.cs",
               "DocumentMoniker": "C:\\Users\\Maxi\\Desktop\\Proyecto\\ProyectoSoftware_TP2_Correcci\u00F3n\\ProyectoSoftware_TP2\\Application\\ApproverRoles\\Commands\\Update\\ApproverRoleUpdateCmdHndlr.cs",
               "RelativeDocumentMoniker": "Application\\ApproverRoles\\Commands\\Update\\ApproverRoleUpdateCmdHndlr.cs",
@@ -1149,7 +1173,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 57,
+              "DocumentIndex": 58,
               "Title": "IUserService.cs",
               "DocumentMoniker": "C:\\Users\\Maxi\\Desktop\\Proyecto\\ProyectoSoftware_TP2_Correcci\u00F3n\\ProyectoSoftware_TP2\\Application\\Interfaces\\Services\\IUserService.cs",
               "RelativeDocumentMoniker": "Application\\Interfaces\\Services\\IUserService.cs",
@@ -1161,7 +1185,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 58,
+              "DocumentIndex": 59,
               "Title": "UserUpdateCmdHndlr.cs",
               "DocumentMoniker": "C:\\Users\\Maxi\\Desktop\\Proyecto\\ProyectoSoftware_TP2_Correcci\u00F3n\\ProyectoSoftware_TP2\\Application\\Users\\Commands\\Update\\UserUpdateCmdHndlr.cs",
               "RelativeDocumentMoniker": "Application\\Users\\Commands\\Update\\UserUpdateCmdHndlr.cs",
@@ -1173,7 +1197,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 60,
+              "DocumentIndex": 61,
               "Title": "UserAddCmdHndlr.cs",
               "DocumentMoniker": "C:\\Users\\Maxi\\Desktop\\Proyecto\\ProyectoSoftware_TP2_Correcci\u00F3n\\ProyectoSoftware_TP2\\Application\\Users\\Commands\\Add\\UserAddCmdHndlr.cs",
               "RelativeDocumentMoniker": "Application\\Users\\Commands\\Add\\UserAddCmdHndlr.cs",
@@ -1185,7 +1209,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 63,
+              "DocumentIndex": 64,
               "Title": "ApproverRoleAddCmdHndlr.cs",
               "DocumentMoniker": "C:\\Users\\Maxi\\Desktop\\Proyecto\\ProyectoSoftware_TP2_Correcci\u00F3n\\ProyectoSoftware_TP2\\Application\\ApproverRoles\\Commands\\Add\\ApproverRoleAddCmdHndlr.cs",
               "RelativeDocumentMoniker": "Application\\ApproverRoles\\Commands\\Add\\ApproverRoleAddCmdHndlr.cs",
@@ -1197,7 +1221,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 62,
+              "DocumentIndex": 63,
               "Title": "ApproverRoleUpdateCmd.cs",
               "DocumentMoniker": "C:\\Users\\Maxi\\Desktop\\Proyecto\\ProyectoSoftware_TP2_Correcci\u00F3n\\ProyectoSoftware_TP2\\Application\\ApproverRoles\\Commands\\Update\\ApproverRoleUpdateCmd.cs",
               "RelativeDocumentMoniker": "Application\\ApproverRoles\\Commands\\Update\\ApproverRoleUpdateCmd.cs",
@@ -1209,7 +1233,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 61,
+              "DocumentIndex": 62,
               "Title": "UserAddCmd.cs",
               "DocumentMoniker": "C:\\Users\\Maxi\\Desktop\\Proyecto\\ProyectoSoftware_TP2_Correcci\u00F3n\\ProyectoSoftware_TP2\\Application\\Users\\Commands\\Add\\UserAddCmd.cs",
               "RelativeDocumentMoniker": "Application\\Users\\Commands\\Add\\UserAddCmd.cs",
@@ -1221,7 +1245,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 59,
+              "DocumentIndex": 60,
               "Title": "UserUpdateCmd.cs",
               "DocumentMoniker": "C:\\Users\\Maxi\\Desktop\\Proyecto\\ProyectoSoftware_TP2_Correcci\u00F3n\\ProyectoSoftware_TP2\\Application\\Users\\Commands\\Update\\UserUpdateCmd.cs",
               "RelativeDocumentMoniker": "Application\\Users\\Commands\\Update\\UserUpdateCmd.cs",
@@ -1233,7 +1257,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 64,
+              "DocumentIndex": 65,
               "Title": "ApproverRoleAddCmd.cs",
               "DocumentMoniker": "C:\\Users\\Maxi\\Desktop\\Proyecto\\ProyectoSoftware_TP2_Correcci\u00F3n\\ProyectoSoftware_TP2\\Application\\ApproverRoles\\Commands\\Add\\ApproverRoleAddCmd.cs",
               "RelativeDocumentMoniker": "Application\\ApproverRoles\\Commands\\Add\\ApproverRoleAddCmd.cs",
@@ -1245,7 +1269,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 65,
+              "DocumentIndex": 66,
               "Title": "ProjectApprovalStepGetByIdQryHndlr.cs",
               "DocumentMoniker": "C:\\Users\\Maxi\\Desktop\\Proyecto\\ProyectoSoftware_TP2_Correcci\u00F3n\\ProyectoSoftware_TP2\\Application\\ProjectApprovalSteps\\Queries\\GetById\\ProjectApprovalStepGetByIdQryHndlr.cs",
               "RelativeDocumentMoniker": "Application\\ProjectApprovalSteps\\Queries\\GetById\\ProjectApprovalStepGetByIdQryHndlr.cs",
@@ -1254,18 +1278,6 @@
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAABjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-26T17:13:20.84Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 66,
-              "Title": "ProjectApprovalStepUpdateCmd.cs",
-              "DocumentMoniker": "C:\\Users\\Maxi\\Desktop\\Proyecto\\ProyectoSoftware_TP2_Correcci\u00F3n\\ProyectoSoftware_TP2\\Application\\ProjectApprovalSteps\\Commands\\Update\\ProjectApprovalStepUpdateCmd.cs",
-              "RelativeDocumentMoniker": "Application\\ProjectApprovalSteps\\Commands\\Update\\ProjectApprovalStepUpdateCmd.cs",
-              "ToolTip": "C:\\Users\\Maxi\\Desktop\\Proyecto\\ProyectoSoftware_TP2_Correcci\u00F3n\\ProyectoSoftware_TP2\\Application\\ProjectApprovalSteps\\Commands\\Update\\ProjectApprovalStepUpdateCmd.cs",
-              "RelativeToolTip": "Application\\ProjectApprovalSteps\\Commands\\Update\\ProjectApprovalStepUpdateCmd.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBAAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-25T02:17:18.339Z"
             },
             {
               "$type": "Document",

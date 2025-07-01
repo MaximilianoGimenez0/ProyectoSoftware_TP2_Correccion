@@ -60,6 +60,7 @@ namespace WebApplication1.Controllers
 
         [HttpGet("{id}")]
         [ProducesResponseType(typeof(ProjectResponse), 200)]
+        [ProducesResponseType(typeof(ApiErrorResponse), 400)]
         [ProducesResponseType(typeof(ApiErrorResponse), 404)]
         public async Task<IActionResult> GetById(Guid id)
         {
@@ -125,9 +126,9 @@ namespace WebApplication1.Controllers
 
         [HttpPatch("{id}")]
         [ProducesResponseType(typeof(ProjectResponse), 200)]
+        [ProducesResponseType(typeof(ApiErrorResponse), 400)]
         [ProducesResponseType(typeof(ApiErrorResponse), 404)]
         [ProducesResponseType(typeof(ApiErrorResponse), 409)]
-        [ProducesResponseType(typeof(ApiErrorResponse), 400)]
         public async Task<IActionResult> UpdateProjectInformation(Guid id, [FromBody] ProjectUpdateRequest request)
         {
             if (id == Guid.Empty)
@@ -160,11 +161,12 @@ namespace WebApplication1.Controllers
             catch (BadRequestException ex) { return BadRequest(new ApiErrorResponse() { message = ex.Message }); }
         }
 
+
         [HttpPatch("{id}/decision")]
         [ProducesResponseType(typeof(ProjectResponse), 200)]
+        [ProducesResponseType(typeof(ApiErrorResponse), 400)]
         [ProducesResponseType(typeof(ApiErrorResponse), 404)]
         [ProducesResponseType(typeof(ApiErrorResponse), 409)]
-        [ProducesResponseType(typeof(ApiErrorResponse), 400)]
         public async Task<IActionResult> ChangeSepStatus(Guid id, [FromBody] DecisionStepUpdateRequest request)
         {
             if (id == Guid.Empty)

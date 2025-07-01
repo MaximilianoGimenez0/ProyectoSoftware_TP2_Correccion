@@ -50,9 +50,6 @@ using Microsoft.EntityFrameworkCore;
 using Application.ApproverRole.Queries.GetALL;
 using Microsoft.AspNetCore.Mvc;
 using Domain.Entities;
-using Application.Exceptions;
-using Application.Dtos.Responses;
-using WebApplication1;
 
 var builder = WebApplication.CreateBuilder(args);
 

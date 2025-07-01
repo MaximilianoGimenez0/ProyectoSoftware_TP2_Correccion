@@ -173,6 +173,15 @@
           "application/json",
           "text/json"
         ],
+        "StatusCode": 400
+      },
+      {
+        "Type": "Application.Dtos.Responses.ApiErrorResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
         "StatusCode": 404
       }
     ]
@@ -213,6 +222,15 @@
           "application/json",
           "text/json"
         ],
+        "StatusCode": 400
+      },
+      {
+        "Type": "Application.Dtos.Responses.ApiErrorResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
         "StatusCode": 404
       },
       {
@@ -223,15 +241,6 @@
           "text/json"
         ],
         "StatusCode": 409
-      },
-      {
-        "Type": "Application.Dtos.Responses.ApiErrorResponse",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 400
       }
     ]
   },
@@ -271,6 +280,15 @@
           "application/json",
           "text/json"
         ],
+        "StatusCode": 400
+      },
+      {
+        "Type": "Application.Dtos.Responses.ApiErrorResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
         "StatusCode": 404
       },
       {
@@ -281,15 +299,6 @@
           "text/json"
         ],
         "StatusCode": 409
-      },
-      {
-        "Type": "Application.Dtos.Responses.ApiErrorResponse",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 400
       }
     ]
   },

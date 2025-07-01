@@ -56,26 +56,7 @@ namespace Application.Services
             _projectProposalGetByIdHandler = projectProposalGetByIdHandler;
             _projectProposalUpdateHander = projectProposalUpdateHander;
         }
-
-        /*
-        public async Task<List<ProjectApprovalStepDto>> ViewPendingWithRole(UserDto user)
-        {
-            var pendingSteps = new List<ProjectApprovalStepDto>();
-
-            var role = user.Role;
-            if (user.Id == null || user.Role == null) { return pendingSteps; }
-
-            var steps = await _projectApprovalStepGetAllHandler.Handle(new ProjectApprovalStepGetAllQry());
-
-            var filtrado = steps
-                .Where(s => s.Status == 1 & s.ApproverRoleId == role)
-                .GroupBy(s => new { s.StepOrder, s.ProjectProposalId })
-                .Select(g => g.First())
-                .ToList();
-
-            return filtrado;
-        }
-        */
+               
 
         public async Task<List<ProjectApprovalStepDto>> ViewPendingAll()
         {
@@ -110,7 +91,7 @@ namespace Application.Services
         {
             var rules = await _approvalRuleGetAllHandler.Handle(new ApprovalRuleGetAllQry());
 
-            // 1. Filtrar reglas aplicables
+            // 1. Filtro por las reglas 
             var applicableRules = rules
                 .Where(rule =>
                     rule.MinAmount <= project.EstimatedAmount &&
@@ -122,14 +103,14 @@ namespace Application.Services
 
             var groupedByStep = applicableRules
             .GroupBy(rule => rule.StepOrder)
-            .OrderBy(g => g.Key) // 👈 asegurás orden ascendente por stepOrder
+            .OrderBy(g => g.Key) 
             .ToList();
 
             var selectedSteps = new List<ProjectApprovalStep>();
 
             foreach (var group in groupedByStep)
             {
-                // 3. Seleccionar la regla más específica (con más filtros definidos)
+                // Selecciono la más especifica
                 var selected = group
                     .OrderByDescending(r =>
                         (r.Area != null ? 1 : 0) + (r.Type != null ? 1 : 0)
@@ -174,6 +155,8 @@ namespace Application.Services
             dbStep.Observations = dto.observation;
             dbStep.DecisionDate = DateTime.Now;
 
+            
+
             var result = await _projectApprovalStepUpdateHander.Handle(new ProjectApprovalStepUpdateCmd(dbStep));
 
             //Si se cambió llamo al metodo para comprobar el status general
@@ -182,7 +165,7 @@ namespace Application.Services
             return false;
         }
 
-        //Chequeo si todos los pasos del proyecto están aprobados o si alguno fue rechazado para modificar el status general
+
         private async Task<bool> UpdateGeneralProjectStatus(Guid projectId)
         {
             var steps = await _projectApprovalStepGetAllHandler.Handle(new ProjectApprovalStepGetAllQry());
@@ -193,7 +176,7 @@ namespace Application.Services
 
             var projectProposal = await _projectProposalGetByIdHandler.Handle(new ProjectProposalGetByIdQry(new ProjectProposalDto() { Id = projectId }));
 
-            // Si alguno tiene status 3 (RECHAZADO), retorno false
+            // Si alguno está rechazado
             if (steps.Any(step => step.Status == 3))
             {
                 projectProposal.Status = 3;
@@ -201,7 +184,7 @@ namespace Application.Services
                 return false;
             }
 
-            // Si todos tienen status 2 (APROBADO)
+            // Si todos están aprobados
             if (steps.All(step => step.Status == 2))
             {
                 projectProposal.Status = 2;
@@ -209,7 +192,7 @@ namespace Application.Services
                 return true;
             }
 
-            // Si alguno tiene status 3 (RECHAZADO), retorno false
+            // Si alguno está observado
             if (steps.Any(step => step.Status == 4))
             {
                 projectProposal.Status = 4;
@@ -217,11 +200,12 @@ namespace Application.Services
                 return false;
             }
 
-            //projectProposal.Status = 4;
-            //await _projectProposalUpdateHander.Handle(new ProjectProposalUpdateCmd(projectProposal));
-            return true;
-
+            // Caso default: hay pasos pendientes
+            projectProposal.Status = 1; // Pending
+            await _projectProposalUpdateHander.Handle(new ProjectProposalUpdateCmd(projectProposal));
+            return false;
         }
+
 
         public async Task<List<ProjectApprovalStep>> GetProjectSteps(Guid id)
         {
@@ -270,15 +254,7 @@ namespace Application.Services
             };
         }
 
-
-        // Clase interna para almacenar los resultados de la evaluación de cada paso
-        public class StepEvaluationResult
-        {
-            public long RuleId { get; set; }
-            public int StepOrder { get; set; }
-            public int Score { get; set; }
-            public int RoleId { get; set; }
-        }
+               
 
     }
 }

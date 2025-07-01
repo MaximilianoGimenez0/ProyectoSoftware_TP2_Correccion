@@ -21,12 +21,6 @@ namespace Infrastructure.Persistence.Repositories
 
         public async Task<bool> Add(Domain.Entities.ProjectProposal project)
         {
-
-            var exists = await _context.ProjectProposals.AnyAsync(p => p.Title == project.Title);
-            if (exists)
-                throw new BadRequestException("Ya existe una propuesta con ese título");
-
-
             var steps = new List<Entities.ProjectApprovalStep>();
 
             foreach (var step in project.Steps) 
@@ -107,25 +101,47 @@ namespace Infrastructure.Persistence.Repositories
 
         public async Task<Domain.Entities.ProjectProposal?> GetById(Guid id)
         {
-            var efProject = await _context.ProjectProposals.FirstOrDefaultAsync(p => p.Id == id);
+            var efProject = await _context.ProjectProposals
+                .Include(p => p.ProjectApprovalSteps)   // <-- Cargar los pasos relacionados
+                .FirstOrDefaultAsync(p => p.Id == id);
 
-            if (efProject == null) { return null; }
+            if (efProject == null) return null;
+
+            var steps = new List<Domain.Entities.ProjectApprovalStep>();
+
+            foreach (var step in efProject.ProjectApprovalSteps)
+            {
+                var temp = new Domain.Entities.ProjectApprovalStep()
+                {
+                    Id = step.Id,
+                    StepOrder = step.StepOrder,
+                    DecisionDate = step.DecisionDate,
+                    Observations = step.Observations,
+                    ProjectProposalId = step.ProjectProposalId,
+                    ApproverUserId = step.ApproverUserId,
+                    ApproverRoleId = step.ApproverRoleId,
+                    Status = step.Status
+                };
+
+                steps.Add(temp);
+        
+            }
 
             var result = new Domain.Entities.ProjectProposal()
-            { 
+            {
                 Id = efProject.Id,
                 Title = efProject.Title,
                 Description = efProject.Description,
                 EstimatedAmount = efProject.EstimatedAmount,
-                EstimatedDuration= efProject.EstimatedDuration,
+                EstimatedDuration = efProject.EstimatedDuration,
                 CreateAt = efProject.CreateAt,
                 Area = efProject.Area,
                 Type = efProject.Type,
                 Status = efProject.Status,
-                CreateBy= efProject.CreateBy
-                
+                CreateBy = efProject.CreateBy,
+                Steps = steps    // <-- Asignar la lista de pasos cargada
             };
-            
+
             return result;
         }
 

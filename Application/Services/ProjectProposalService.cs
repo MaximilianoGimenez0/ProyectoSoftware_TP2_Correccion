@@ -15,6 +15,8 @@ using Application.Dtos.Responses;
 using Application.Exceptions;
 using Application.Interfaces;
 using Application.Interfaces.Services;
+using Application.ProjectApprovalSteps.Commands.Update;
+using Application.ProjectApprovalSteps.Queries.GetById;
 using Application.ProjectProposals.Commands.Add;
 using Application.ProjectProposals.Commands.Update;
 using Application.ProjectProposals.Queries.GetAll;
@@ -36,11 +38,13 @@ namespace Application.Services
         private readonly IQueryHandler<UserGetByIdQry, User?> _userGetByIdHandler;
         private readonly IQueryHandler<ProjectProposalGetByIdQry, ProjectProposal?> _projectProposalGetByIdHandler;
         private readonly IQueryHandler<ApproverRoleGetByIdQry, Domain.Entities.ApproverRole?> _approverRoleGetByIdHandler;
+        private readonly IQueryHandler<ProjectApprovalStepGetByIdQry, ProjectApprovalStep?> _projectApprovalStepGetByIdHandler;
 
         private readonly IQueryHandler<ProjectProposalGetAllQry, List<ProjectProposalDto>> _projectProposalGetAllHandler;
         
         private readonly ICommandHandler<ProjectProposalUpdateCmd, bool> _projectProposalUpdateHandler;
         private readonly ICommandHandler<ProjectProposalAddCmd,bool> _projectProposalAddHandler;
+        private readonly ICommandHandler<ProjectApprovalStepUpdateCmd,bool> _projectApprovalStepUpdateHandler;
         
         private readonly IProjectApprovalStepService _projectApprovalStepService;
 
@@ -55,7 +59,9 @@ namespace Application.Services
             IQueryHandler<ProjectProposalGetByIdQry, ProjectProposal?> projectProposalGetByIdHandler,
             IProjectApprovalStepService projectApprovalStepService,
             IQueryHandler<ApproverRoleGetByIdQry, Domain.Entities.ApproverRole?> approverRoleGetByIdHandler,
-            ICommandHandler<ProjectProposalUpdateCmd, bool> projectProposalUpdateHandler)
+            ICommandHandler<ProjectProposalUpdateCmd, bool> projectProposalUpdateHandler,
+            ICommandHandler<ProjectApprovalStepUpdateCmd, bool> projectApprovalStepUpdateHandler,
+            IQueryHandler<ProjectApprovalStepGetByIdQry, ProjectApprovalStep?> projectApprovalStepGetByIdHandler)
         {
             _projectProposalGetAllHandler = projectProposalGetAllHandler;
             _areaGetByIdHandler = areaGetByIdHandler;
@@ -67,6 +73,8 @@ namespace Application.Services
             _projectApprovalStepService = projectApprovalStepService;
             _approverRoleGetByIdHandler = approverRoleGetByIdHandler;
             _projectProposalUpdateHandler = projectProposalUpdateHandler;
+            _projectApprovalStepUpdateHandler = projectApprovalStepUpdateHandler;
+            _projectApprovalStepGetByIdHandler = projectApprovalStepGetByIdHandler;
         }
 
         public async Task<ProjectResponse> GetCompleteProjectGetById(Guid id)
@@ -137,7 +145,7 @@ namespace Application.Services
                 }
                 else
                 {
-                    // Si no hay usuario asignado, asignar valores por defecto que no generen error
+                    // Si no hay usuario asignado, asigno valores por defecto que no generen error
                     tempStepUser = new Dtos.Responses.UsersResponse()
                     {
                         id = 0,
@@ -427,12 +435,6 @@ namespace Application.Services
             
             if (project.Status != 4) { throw new BadRequestException("El proyecto se encuentra en un estado que no permite modificaciones"); }
 
-            /*//validaciones
-            if (update.title.Length == 0 || update.title.Length > 255) { throw new BadRequestException("El titulo no es valido"); }
-            if (update.duration<0) { throw new BadRequestException("La duración del proyecto no puede ser cero"); }
-            if (update.description.Length == 0 || update.description.Length > 255) { throw new BadRequestException("La descripción no es valida"); }
-            */
-
             if (update.title != null) { project.Title = update.title; }
             if (update.description != null) { project.Description = update.description; }
             if (update.duration != null) { project.EstimatedDuration = (int)update.duration; }
@@ -448,37 +450,64 @@ namespace Application.Services
 
         public async Task<ProjectResponse> UpdateProjectStep(Guid projectId, updateApprovalStatusDto dto)
         {
-            // 1. Obtener proyecto
+            
             var project = await _projectProposalGetByIdHandler.Handle(new ProjectProposalGetByIdQry(new ProjectProposalDto() { Id = projectId }));
             if (project == null) { throw new BadRequestException("El proyecto ingresado no existe"); }
 
-            // 2. Validar estado general del proyecto: no modificar si está aprobado o rechazado
+            
             if (project.Status == 2 || project.Status == 3) { throw new ConflictException("El proyecto ya no se encuentra en un estado que permite modificaciones"); } 
                
-
-            // 3. Validar usuario
+            
             var user = await _userGetByIdHandler.Handle(new UserGetByIdQry(new UserDto() { Id = dto.user }));
             if (user == null) { throw new BadRequestException("El usuario ingresado no existe"); }
                 
 
-            // 4. Obtener el próximo paso pendiente
             var nextStep = await _projectApprovalStepService.ViewNextProjectApprvalStep(projectId);
             if (nextStep == null) { throw new BadRequestException("El proyecto no tiene un paso pendiente de aprobación"); }
 
 
-            // 5. Validar que el paso que se intenta actualizar sea el próximo pendiente
             if (nextStep.Id != dto.step) { throw new BadRequestException("El id del paso no corresponde con el próximo paso pendiente de aprobación"); }
 
 
-            // 6. Validar que el usuario tenga el rol para aprobar el paso
             if (nextStep.ApproverRoleId.Value != user.Role) { throw new BadRequestException("El rol del usuario no corresponde, no puede aprobar este paso"); }
-               
 
-            // 7. Actualizar el estado del paso
-            var updateSuccess = await _projectApprovalStepService.UpdateStatus(dto);
+            var dbStep = await _projectApprovalStepGetByIdHandler.Handle(new ProjectApprovalStepGetByIdQry(new ProjectApprovalStepDto() {Id = dto.step }));
+
+            if (dbStep == null) { throw new BadRequestException("El paso no existe"); }
+
+            dbStep.Status = dto.newStatus.Value;
+            dbStep.DecisionDate = DateTime.Now;
+            dbStep.ApproverUserId = dto.user.Value;
+            dbStep.Observations = dto.observation;
+            
+            var updateSuccess = await _projectApprovalStepUpdateHandler.Handle(new ProjectApprovalStepUpdateCmd(dbStep));
+
             if (!updateSuccess) { throw new BadRequestException("Datos de decisión inválidos"); }
-                
-            // 10. Retornar el proyecto actualizado completo
+
+
+            project = await _projectProposalGetByIdHandler.Handle(new ProjectProposalGetByIdQry(new ProjectProposalDto() {Id = projectId }));
+
+            if (project.Steps.Any(s => s.Status == 3))       // Algún paso rechazado
+            {
+                project.Status = 3;
+            }
+            else if (project.Steps.All(s => s.Status == 2))  // Todos aprobados
+            {
+                project.Status = 2;
+            }
+            else if (project.Steps.Any(s => s.Status == 4))  // Alguno observado
+            {
+                project.Status = 4;
+            }
+            else                                              // Todavía hay pendientes
+            {
+                project.Status = 1;
+            }
+
+
+            var updatedProject = await _projectProposalUpdateHandler.Handle(new ProjectProposalUpdateCmd(project));
+            if (!updatedProject) { throw new BadRequestException("El proyecto no se pudo actualizar"); }
+
             return await GetCompleteProjectGetById(projectId);
         }
 

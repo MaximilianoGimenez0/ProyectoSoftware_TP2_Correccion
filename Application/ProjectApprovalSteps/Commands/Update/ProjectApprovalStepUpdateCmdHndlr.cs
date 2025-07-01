@@ -52,8 +52,8 @@ namespace Application.ProjectApprovalSteps.Commands.Update
             //Comprobación ApproverUser
             if (dto.ApproverUserId != null)
             {
-                var approverUserId = dto.ProjectProposalId;
-                var approverUser = await _projectProposalRepository.GetById(approverUserId);
+                var approverUserId = dto.ApproverUserId;
+                var approverUser = await _userRepository.GetById(approverUserId.Value);
                 if (approverUser == null) { return false; }
             }
 
