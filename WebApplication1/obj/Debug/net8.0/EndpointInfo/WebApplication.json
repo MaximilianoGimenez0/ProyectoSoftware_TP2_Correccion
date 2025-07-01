@@ -378,21 +378,24 @@
             "name": "status",
             "in": "query",
             "schema": {
-              "type": "string"
+              "type": "integer",
+              "format": "int32"
             }
           },
           {
             "name": "applicant",
             "in": "query",
             "schema": {
-              "type": "string"
+              "type": "integer",
+              "format": "int32"
             }
           },
           {
             "name": "approvalUser",
             "in": "query",
             "schema": {
-              "type": "string"
+              "type": "integer",
+              "format": "int32"
             }
           }
         ],
@@ -508,7 +511,7 @@
           }
         }
       },
-      "put": {
+      "patch": {
         "tags": [
           "Project"
         ],
@@ -627,7 +630,7 @@
       }
     },
     "/api/project/{id}/decision": {
-      "post": {
+      "patch": {
         "tags": [
           "Project"
         ],
@@ -749,9 +752,6 @@
   "components": {
     "schemas": {
       "ApiErrorResponse": {
-        "required": [
-          "message"
-        ],
         "type": "object",
         "properties": {
           "message": {
@@ -766,13 +766,11 @@
         "properties": {
           "id": {
             "type": "integer",
-            "format": "int64",
-            "nullable": true
+            "format": "int64"
           },
           "stepOrder": {
             "type": "integer",
-            "format": "int32",
-            "nullable": true
+            "format": "int32"
           },
           "decisionDate": {
             "type": "string",
@@ -805,10 +803,9 @@
         "type": "object",
         "properties": {
           "id": {
-            "maximum": 2147483647,
             "minimum": 0,
             "type": "integer",
-            "format": "int32"
+            "format": "int64"
           },
           "user": {
             "maximum": 2147483647,
@@ -835,12 +832,10 @@
         "properties": {
           "id": {
             "type": "integer",
-            "format": "int32",
-            "nullable": true
+            "format": "int32"
           },
           "name": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           }
         },
         "additionalProperties": false
@@ -904,26 +899,21 @@
         "properties": {
           "id": {
             "type": "string",
-            "format": "uuid",
-            "nullable": true
+            "format": "uuid"
           },
           "title": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "description": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "amount": {
             "type": "number",
-            "format": "double",
-            "nullable": true
+            "format": "double"
           },
           "duration": {
             "type": "integer",
-            "format": "int32",
-            "nullable": true
+            "format": "int32"
           },
           "user": {
             "$ref": "#/components/schemas/UsersResponse"
@@ -952,38 +942,30 @@
         "properties": {
           "id": {
             "type": "string",
-            "format": "uuid",
-            "nullable": true
+            "format": "uuid"
           },
           "title": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "description": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "amount": {
             "type": "number",
-            "format": "double",
-            "nullable": true
+            "format": "double"
           },
           "duration": {
             "type": "integer",
-            "format": "int32",
-            "nullable": true
+            "format": "int32"
           },
           "area": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "status": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "type": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           }
         },
         "additionalProperties": false
@@ -1020,12 +1002,10 @@
         "properties": {
           "id": {
             "type": "integer",
-            "format": "int32",
-            "nullable": true
+            "format": "int32"
           },
           "name": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "email": {
             "type": "string",

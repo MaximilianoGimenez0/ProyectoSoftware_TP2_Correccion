@@ -5,8 +5,8 @@ namespace Application.Dtos.Requests
     public class DecisionStepUpdateRequest
     {
         [Required(ErrorMessage = "El id es obligatorio")]
-        [Range(0, int.MaxValue, ErrorMessage = "El status debe ser un numero positivo.")]
-        public int id {  get; set; }
+        [Range(0, long.MaxValue, ErrorMessage = "El status debe ser un numero positivo.")]
+        public long id {  get; set; }
 
         [Required(ErrorMessage = "El usuario es obligatorio")]
         [Range(0, int.MaxValue, ErrorMessage = "El usuario debe ser un numero positivo.")]

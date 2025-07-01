@@ -52,6 +52,7 @@ using Microsoft.AspNetCore.Mvc;
 using Domain.Entities;
 using Application.Exceptions;
 using Application.Dtos.Responses;
+using WebApplication1;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -187,9 +188,13 @@ builder.Services.AddScoped<IQueryHandler<ApprovalStatusGetAllQry, List<ApprovalS
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+builder.Services.AddSwaggerGen(options =>
+{
+    options.SupportNonNullableReferenceTypes();
+});
 
 
+//Prevenir las respuestas automaticas del modelstate
 builder.Services.Configure<ApiBehaviorOptions>(options =>
 {
     options.SuppressModelStateInvalidFilter = true;
@@ -204,15 +209,13 @@ builder.Services.AddCors(options =>
     options.AddPolicy(name: MyAllowSpecificOrigins,
         policy =>
         {
-            policy.WithOrigins("http://127.0.0.1:5500")
+            policy.WithOrigins("http://127.0.0.1:5501")
                   .AllowAnyHeader()
                   .AllowAnyMethod();
         });
 });
 
 var app = builder.Build();
-
-//app.UseMiddleware<ExceptionMiddleware>();
 
 
 //Configure the HTTP request pipeline.

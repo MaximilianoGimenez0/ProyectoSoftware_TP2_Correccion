@@ -8,6 +8,6 @@ namespace Application.Dtos.Responses
 {
     public class ApiErrorResponse
     {
-        public required string message { get; set; }
+        public string? message { get; set; }
     }
 }

@@ -32,7 +32,7 @@ namespace Application.Services
             var roles = await _approverRoleGetAllHandler.Handle(new ApproverRoleGetAllQry());
             foreach (var role in roles)
             {
-                var tempRole = new GenericResponse() { id = role.Id, name = role.Name };
+                var tempRole = new GenericResponse() { id = role.Id.Value, name = role.Name };
                 results.Add(tempRole);
             }
 

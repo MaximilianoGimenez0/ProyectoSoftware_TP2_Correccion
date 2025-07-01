@@ -102,11 +102,11 @@ namespace Application.Services
 
             var projectUserRole = await _approverRoleGetByIdHandler.Handle(new ApproverRoleGetByIdQry(new ApproverRoleDto() { Id = user.Role }));
 
-            var projectUser = new Dtos.Responses.UsersResponse()
+            var projectUser = new UsersResponse()
             {
-                Id = user.Id,
-                Name = string.IsNullOrWhiteSpace(user.Name) ? "Sin nombre" : user.Name,
-                Email = string.IsNullOrWhiteSpace(user.Email) ? "Sin email" : user.Email,
+                id = user.Id,
+                name = string.IsNullOrWhiteSpace(user.Name) ? "Sin nombre" : user.Name,
+                email = string.IsNullOrWhiteSpace(user.Email) ? "Sin email" : user.Email,
                 role = new GenericResponse() { id = projectUserRole.Id, name = string.IsNullOrWhiteSpace(projectUserRole.Name) ? "Sin rol" : projectUserRole.Name }
             };
 
@@ -125,9 +125,9 @@ namespace Application.Services
 
                     tempStepUser = new Dtos.Responses.UsersResponse()
                     {
-                        Id = _tempStepUser?.Id ?? 0,
-                        Name = string.IsNullOrWhiteSpace(_tempStepUser?.Name) ? "Sin nombre" : _tempStepUser.Name,
-                        Email = string.IsNullOrWhiteSpace(_tempStepUser?.Email) ? "Sin email" : _tempStepUser.Email,
+                        id = _tempStepUser?.Id ?? 0,
+                        name = string.IsNullOrWhiteSpace(_tempStepUser?.Name) ? "Sin nombre" : _tempStepUser.Name,
+                        email = string.IsNullOrWhiteSpace(_tempStepUser?.Email) ? "Sin email" : _tempStepUser.Email,
                         role = new GenericResponse()
                         {
                             id = _tempStepUserRole?.Id ?? 0,
@@ -140,9 +140,9 @@ namespace Application.Services
                     // Si no hay usuario asignado, asignar valores por defecto que no generen error
                     tempStepUser = new Dtos.Responses.UsersResponse()
                     {
-                        Id = 0,
-                        Name = "Sin usuario asignado",
-                        Email = "Sin email",
+                        id = 0,
+                        name = "Sin usuario asignado",
+                        email = "Sin email",
                         role = new GenericResponse()
                         {
                             id = 0,
@@ -220,7 +220,7 @@ namespace Application.Services
 
             //El proyecto no puede tener el mismo titulo que otro proyecto ya creado
             var projects = await _projectProposalGetAllHandler.Handle(new ProjectProposalGetAllQry());
-            projects = projects.Where(c => c.Title.ToLower() == project.Title.ToLower()).ToList();
+            projects = projects.Where(c => c.Title == project.Title).ToList();
 
             
             if (projects.Count > 0)
@@ -266,6 +266,7 @@ namespace Application.Services
             }
 
             var id = Guid.NewGuid();
+
             //Mapeo de dto a clase de dominio
             var DtoProposal = new ProjectProposal()
             {
@@ -284,12 +285,15 @@ namespace Application.Services
 
             var calculatedSteps = await _projectApprovalStepService.CalculateSteps(DtoProposal);
 
+            //Se asignan los pasos calculados al proyecto
             DtoProposal.Steps = calculatedSteps;
 
+            //Se establece la relación del lado del paso hacia el proyecto
             foreach (var step in calculatedSteps) {
                 step.StepProjectProposal = DtoProposal;
             }
 
+            //Se maneja la creación de forma transaccional
             await _projectProposalAddHandler.Handle(new ProjectProposalAddCmd(DtoProposal));
 
             return await GetCompleteProjectGetById(id);
@@ -331,9 +335,7 @@ namespace Application.Services
 
         public async Task<List<ProjectShortResponse>> GetFiltered(string? title, int? status, int? createBy, int? approvalUser)
         {
-
-          
-            
+                       
             var projects = await _projectProposalGetAllHandler.Handle(new ProjectProposalGetAllQry());
             
             if (projects.Count<0) { throw new BadRequestException("Parámetro de consulta inválido"); }
@@ -389,11 +391,11 @@ namespace Application.Services
                 
                 var temp = new ProjectShortResponse() 
                 {
-                    id = project.Id,
+                    id = project.Id.Value,
                     title = project.Title,
                     description = project.Description,
-                    amount = project.EstimatedAmount,
-                    duration = project.EstimatedDuration,
+                    amount = project.EstimatedAmount.Value,
+                    duration = project.EstimatedDuration.Value,
                     area = _projectArea.Name,
                     status = _projectStatus.Name,
                     type = _projectType.Name,
@@ -409,33 +411,36 @@ namespace Application.Services
         public async Task<ProjectResponse> UpdateProject(Guid id, ProjectUpdateRequest update)
         {
             //El proyecto no pu ede tener el mismo titulo que otro proyecto ya creado
-            var currentProject = await _projectProposalGetByIdHandler.Handle(new ProjectProposalGetByIdQry(new ProjectProposalDto() { Id = id}));
+            var project = await _projectProposalGetByIdHandler.Handle(new ProjectProposalGetByIdQry(new ProjectProposalDto() { Id = id}));
 
-            if (currentProject.Title != update.title) { 
+            if (project == null) { throw new BadRequestException("El proyecto no se encuentra"); }
 
+            if (update.title != null && project.Title != update.title) { 
+            
             var projects = await _projectProposalGetAllHandler.Handle(new ProjectProposalGetAllQry());
-            projects = projects.Where(c => c.Title.ToLower() == update.title.ToLower()).ToList();
+            projects = projects.Where(c => c.Title == update.title).ToList();
+
             if (projects.Count > 0) { throw new BadRequestException("Ya existe un proyecto con el mismo titulo"); }
+                        
             }
-
-
-            var project = await _projectProposalGetByIdHandler.Handle(new ProjectProposalGetByIdQry(new ProjectProposalDto() {Id = id }));
-            if (project == null) { throw new NotFoundException("Proyecto no encontrado"); }
-            //Si el proyecto no está en estado de observación no se puede editar
+                                   
+            
             if (project.Status != 4) { throw new BadRequestException("El proyecto se encuentra en un estado que no permite modificaciones"); }
 
-            //validaciones
-            if (update.title.Length == 0 || update.title.Length > 100) { throw new BadRequestException("Datos de actualización inválidos"); }
+            /*//validaciones
+            if (update.title.Length == 0 || update.title.Length > 255) { throw new BadRequestException("El titulo no es valido"); }
             if (update.duration<0) { throw new BadRequestException("La duración del proyecto no puede ser cero"); }
-            if (update.description.Length == 0) { throw new BadRequestException("La descripción no puede tener longitud 0"); }
+            if (update.description.Length == 0 || update.description.Length > 255) { throw new BadRequestException("La descripción no es valida"); }
+            */
 
-            project.Title = update.title;
-            project.Description = update.description;
-            project.EstimatedDuration = update.duration.Value;
-
+            if (update.title != null) { project.Title = update.title; }
+            if (update.description != null) { project.Description = update.description; }
+            if (update.duration != null) { project.EstimatedDuration = (int)update.duration; }
+          
             await _projectProposalUpdateHandler.Handle(new ProjectProposalUpdateCmd(project));
 
-            var result = new ProjectResponse() { id = project.Id };
+            var result = await GetCompleteProjectGetById(project.Id);
+
             return result;
         }
 
@@ -473,9 +478,6 @@ namespace Application.Services
             var updateSuccess = await _projectApprovalStepService.UpdateStatus(dto);
             if (!updateSuccess) { throw new BadRequestException("Datos de decisión inválidos"); }
                 
-
-           
-
             // 10. Retornar el proyecto actualizado completo
             return await GetCompleteProjectGetById(projectId);
         }

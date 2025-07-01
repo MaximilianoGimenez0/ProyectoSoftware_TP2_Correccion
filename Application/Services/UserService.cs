@@ -38,9 +38,9 @@ namespace Application.Services
 
                 var tempUser = new Dtos.Responses.UsersResponse() 
                 {
-                    Id = user.Id,
-                    Name = user.Name,
-                    Email = user.Email,
+                    id = user.Id.Value,
+                    name = user.Name,
+                    email = user.Email,
                     role = tempRole
                 };
                 response.Add(tempUser);

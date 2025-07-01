@@ -28,7 +28,7 @@ namespace Application.Services
             var statuses = await _approvalStatusGetAllHandler.Handle(new ApprovalStatusGetAllQry());
             foreach (var status in statuses)
             {
-                var tempStatus = new GenericResponse() { id = status.Id, name = status.Name };
+                var tempStatus = new GenericResponse() { id = status.Id.Value, name = status.Name };
                 results.Add(tempStatus);
             }
             

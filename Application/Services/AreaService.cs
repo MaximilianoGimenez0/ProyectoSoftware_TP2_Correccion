@@ -27,7 +27,7 @@ namespace Application.Services
             var areas = await _areaGetAllHndlr.Handle(new AreaGetAllQry());
             foreach (var area in areas) 
             {
-                var tempArea = new GenericResponse() { id = area.Id, name = area.Name };
+                var tempArea = new GenericResponse() { id = area.Id.Value, name = area.Name };
                 results.Add(tempArea);
             }
 

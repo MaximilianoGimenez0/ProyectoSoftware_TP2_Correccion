@@ -104,83 +104,51 @@ namespace Application.Services
 
             return pendingSteps;
         }
-                
-        public async Task<List<Domain.Entities.ProjectApprovalStep>> CalculateSteps(Domain.Entities.ProjectProposal project)
+
+        
+        public async Task<List<ProjectApprovalStep>> CalculateSteps(ProjectProposal project)
         {
             var rules = await _approvalRuleGetAllHandler.Handle(new ApprovalRuleGetAllQry());
 
-            var reglasAgrupadas = rules.GroupBy(r => r.StepOrder).ToList();
-            
-            var stepEvaluationResults = new List<StepEvaluationResult>();
+            // 1. Filtrar reglas aplicables
+            var applicableRules = rules
+                .Where(rule =>
+                    rule.MinAmount <= project.EstimatedAmount &&
+                    (rule.MaxAmount == 0 || rule.MaxAmount >= project.EstimatedAmount) &&
+                    (rule.Area == null || rule.Area == project.Area) &&
+                    (rule.Type == null || rule.Type == project.Type)
+                )
+                .ToList();
 
-            foreach (var group in reglasAgrupadas)
+            var groupedByStep = applicableRules
+            .GroupBy(rule => rule.StepOrder)
+            .OrderBy(g => g.Key) // 👈 asegurás orden ascendente por stepOrder
+            .ToList();
+
+            var selectedSteps = new List<ProjectApprovalStep>();
+
+            foreach (var group in groupedByStep)
             {
+                // 3. Seleccionar la regla más específica (con más filtros definidos)
+                var selected = group
+                    .OrderByDescending(r =>
+                        (r.Area != null ? 1 : 0) + (r.Type != null ? 1 : 0)
+                    )
+                    .ThenBy(r => r.Id)
+                    .FirstOrDefault();
 
-                int stepOrder = group.First().StepOrder.Value;
-                StepEvaluationResult bestMatch = null;
-                int bestScore = -1;
-
-                foreach (var rule in group)
+                if (selected != null)
                 {
-                    int tempScore = 1;
-                    //Comprobar: 
-                    // Se encuentra dentro de los valores de amount -> Excluyente
-                    if (project.EstimatedAmount > rule.MaxAmount || project.EstimatedAmount < rule.MinAmount) { continue; }
-
-                    // Si la regla tiene area definida y mi proyecto tiene un area diferente no vale --> Excluyente
-                    // Si la regla tiene area definida y es igual al de mi proyecto --> SUMA PUNTO
-
-                    if (rule.Area != null && project.Area != rule.Area ) { continue; }
-                    // Si la regla tiene un tipo definido y mi proyecto tiene un tipo diferente no vale --> Excluyente
-                    // Si la regla tiene tipo definido y es igual al de mi proyecto --> SUMA PUNTO
-                    if (rule.Area == project.Area) 
+                    selectedSteps.Add(new ProjectApprovalStep
                     {
-                        //SUMA PUNTO
-                        tempScore++;
-                    }
-
-                    if (rule.Type != null && project.Type != rule.Type ) { continue; }
-                    if (rule.Type == project.Type)
-                    {
-                        //SUMA PUNTO
-                        tempScore++;
-                    }
-
-
-                    // Si la regla analizada tiene un score > bestScore --> Creo una nueva regla y seteo el bestScore a mi score
-                    // DEFINO EL BESTMATCH CON LOS DATOS DE LA REGLA 
-                    // SI EL SCORE ES EL MAXIMO ENTONCES SALGO DEL LOOP DEL FOREACH PORQUE YA ENCONTRÉ LO QUE QUERIA
-                    if (tempScore > bestScore) 
-                    {
-                        bestMatch = new StepEvaluationResult() 
-                        {
-                            RoleId = rule.ApproverRoleId.Value,
-                            StepOrder = stepOrder,
-                            Score = tempScore,
-                            RuleId = rule.Id.Value
-                        };
-                        if (tempScore == 3) { break; }
-                    }
-                }
-
-                if (bestMatch != null)
-                {
-                    stepEvaluationResults.Add(bestMatch);
+                        ApproverRoleId = selected.ApproverRoleId.Value,
+                        StepOrder = selected.StepOrder.Value,
+                        Status = 1
+                    });
                 }
             }
 
-            var calculatedSteps = new List<Domain.Entities.ProjectApprovalStep>();
-            foreach (var step in stepEvaluationResults)
-            {
-                calculatedSteps.Add(new Domain.Entities.ProjectApprovalStep()
-                {
-                    StepOrder = step.StepOrder,
-                    ApproverRoleId = step.RoleId,
-                    Status = 1
-                });
-            }
-
-            return calculatedSteps;
+            return selectedSteps;
         }
 
 

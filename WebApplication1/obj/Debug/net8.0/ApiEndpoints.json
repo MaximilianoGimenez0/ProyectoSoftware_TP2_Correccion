@@ -107,17 +107,17 @@
       },
       {
         "Name": "status",
-        "Type": "System.String",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
         "IsRequired": false
       },
       {
         "Name": "applicant",
-        "Type": "System.String",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
         "IsRequired": false
       },
       {
         "Name": "approvalUser",
-        "Type": "System.String",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
         "IsRequired": false
       }
     ],
@@ -181,7 +181,7 @@
     "ContainingType": "WebApplication1.Controllers.ProjectController",
     "Method": "UpdateProjectInformation",
     "RelativePath": "api/project/{id}",
-    "HttpMethod": "PUT",
+    "HttpMethod": "PATCH",
     "IsController": true,
     "Order": 0,
     "Parameters": [
@@ -239,7 +239,7 @@
     "ContainingType": "WebApplication1.Controllers.ProjectController",
     "Method": "ChangeSepStatus",
     "RelativePath": "api/project/{id}/decision",
-    "HttpMethod": "POST",
+    "HttpMethod": "PATCH",
     "IsController": true,
     "Order": 0,
     "Parameters": [
