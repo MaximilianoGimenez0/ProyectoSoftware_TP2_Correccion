@@ -499,7 +499,7 @@ namespace Application.Services
             {
                 project.Status = 4;
             }
-            else                                              // Todavía hay pendientes
+            else                                            // Todavía hay pendientes
             {
                 project.Status = 1;
             }
