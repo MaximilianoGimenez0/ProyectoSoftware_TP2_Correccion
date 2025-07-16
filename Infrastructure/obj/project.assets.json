@@ -10105,11 +10105,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Maxi\\Desktop\\Proyecto\\ProyectoSoftware_TP2_Corrección\\ProyectoSoftware_TP2\\Infrastructure\\Infrastructure.csproj",
+      "projectUniqueName": "C:\\Users\\Maxi\\Desktop\\Proyecto\\FINAL-CORRECCIÓN-TP3\\ProyectoSoftware_TP2_Correccion\\Infrastructure\\Infrastructure.csproj",
       "projectName": "Infrastructure",
-      "projectPath": "C:\\Users\\Maxi\\Desktop\\Proyecto\\ProyectoSoftware_TP2_Corrección\\ProyectoSoftware_TP2\\Infrastructure\\Infrastructure.csproj",
+      "projectPath": "C:\\Users\\Maxi\\Desktop\\Proyecto\\FINAL-CORRECCIÓN-TP3\\ProyectoSoftware_TP2_Correccion\\Infrastructure\\Infrastructure.csproj",
       "packagesPath": "C:\\Users\\Maxi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Maxi\\Desktop\\Proyecto\\ProyectoSoftware_TP2_Corrección\\ProyectoSoftware_TP2\\Infrastructure\\obj\\",
+      "outputPath": "C:\\Users\\Maxi\\Desktop\\Proyecto\\FINAL-CORRECCIÓN-TP3\\ProyectoSoftware_TP2_Correccion\\Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -10130,8 +10130,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\Maxi\\Desktop\\Proyecto\\ProyectoSoftware_TP2_Corrección\\ProyectoSoftware_TP2\\Application\\Application.csproj": {
-              "projectPath": "C:\\Users\\Maxi\\Desktop\\Proyecto\\ProyectoSoftware_TP2_Corrección\\ProyectoSoftware_TP2\\Application\\Application.csproj"
+            "C:\\Users\\Maxi\\Desktop\\Proyecto\\FINAL-CORRECCIÓN-TP3\\ProyectoSoftware_TP2_Correccion\\Application\\Application.csproj": {
+              "projectPath": "C:\\Users\\Maxi\\Desktop\\Proyecto\\FINAL-CORRECCIÓN-TP3\\ProyectoSoftware_TP2_Correccion\\Application\\Application.csproj"
             }
           }
         }

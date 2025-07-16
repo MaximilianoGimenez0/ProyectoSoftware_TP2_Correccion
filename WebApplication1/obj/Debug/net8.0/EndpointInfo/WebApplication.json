@@ -816,7 +816,6 @@
       "DecisionStepUpdateRequest": {
         "required": [
           "id",
-          "observation",
           "status",
           "user"
         ],
@@ -873,12 +872,12 @@
         "type": "object",
         "properties": {
           "title": {
-            "maxLength": 100,
+            "maxLength": 255,
             "minLength": 0,
             "type": "string"
           },
           "description": {
-            "maxLength": 100,
+            "maxLength": 255,
             "minLength": 0,
             "type": "string"
           },

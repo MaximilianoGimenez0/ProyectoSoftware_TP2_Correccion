@@ -5,11 +5,11 @@ namespace Application.Dtos.Responses
     public class ProjectProposalCreateRequest
     {
         [Required(ErrorMessage = "El título es obligatorio.")]
-        [StringLength(100, ErrorMessage = "El título no puede tener más de 100 caracteres.")]
+        [StringLength(255, ErrorMessage = "El título no puede tener más de 255 caracteres.")]
         public string? title { get; set; }
 
         [Required(ErrorMessage = "La descripción es obligatoria.")]
-        [StringLength(100, ErrorMessage = "La descripción no puede tener más de 100 caracteres.")]
+        [StringLength(255, ErrorMessage = "La descripción no puede tener más de 255 caracteres.")]
         public string? description { get; set; }
 
         [Required(ErrorMessage = "El valor estimado es obligatorio.")]

@@ -108,14 +108,13 @@ namespace Application.Services
                 throw new NotFoundException("Usuario de proyecto inexistente");
             }
 
-            var projectUserRole = await _approverRoleGetByIdHandler.Handle(new ApproverRoleGetByIdQry(new ApproverRoleDto() { Id = user.Role }));
 
             var projectUser = new UsersResponse()
             {
                 id = user.Id,
-                name = string.IsNullOrWhiteSpace(user.Name) ? "Sin nombre" : user.Name,
-                email = string.IsNullOrWhiteSpace(user.Email) ? "Sin email" : user.Email,
-                role = new GenericResponse() { id = projectUserRole.Id, name = string.IsNullOrWhiteSpace(projectUserRole.Name) ? "Sin rol" : projectUserRole.Name }
+                name = user.Name,
+                email =user.Email,
+                role = new GenericResponse() { id = user.UserRole.Id, name = user.UserRole.Name}
             };
 
             var steps = await _projectApprovalStepService.GetProjectSteps(id);
@@ -146,17 +145,7 @@ namespace Application.Services
                 else
                 {
                     // Si no hay usuario asignado, asigno valores por defecto que no generen error
-                    tempStepUser = new Dtos.Responses.UsersResponse()
-                    {
-                        id = 0,
-                        name = "Sin usuario asignado",
-                        email = "Sin email",
-                        role = new GenericResponse()
-                        {
-                            id = 0,
-                            name = "Sin rol"
-                        }
-                    };
+                    tempStepUser = null;
                 }
 
                 var _tempStepApproverRole = await _approverRoleGetByIdHandler.Handle(new ApproverRoleGetByIdQry(new ApproverRoleDto() { Id = step.ApproverRoleId }));
@@ -178,7 +167,7 @@ namespace Application.Services
                     id = step.Id,
                     stepOrder = step.StepOrder,
                     decisionDate = step.DecisionDate,
-                    observations = step.Observations ?? string.Empty,
+                    observations = step.Observations,
                     approverUser = tempStepUser,
                     approverRole = tempStepApproverRole,
                     status = tempStepStatus
@@ -189,8 +178,8 @@ namespace Application.Services
             var Response = new ProjectResponse()
             {
                 id = project.Id,
-                title = project.Title ?? string.Empty,
-                description = project.Description ?? string.Empty,
+                title = project.Title,
+                description = project.Description,
                 amount = project.EstimatedAmount,
                 duration = project.EstimatedDuration,
                 area = projectArea,

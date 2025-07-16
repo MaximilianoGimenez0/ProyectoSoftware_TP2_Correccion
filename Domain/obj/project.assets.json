@@ -1729,11 +1729,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Maxi\\Desktop\\Proyecto\\ProyectoSoftware_TP2_Corrección\\ProyectoSoftware_TP2\\Domain\\Domain.csproj",
+      "projectUniqueName": "C:\\Users\\Maxi\\Desktop\\Proyecto\\FINAL-CORRECCIÓN-TP3\\ProyectoSoftware_TP2_Correccion\\Domain\\Domain.csproj",
       "projectName": "Domain",
-      "projectPath": "C:\\Users\\Maxi\\Desktop\\Proyecto\\ProyectoSoftware_TP2_Corrección\\ProyectoSoftware_TP2\\Domain\\Domain.csproj",
+      "projectPath": "C:\\Users\\Maxi\\Desktop\\Proyecto\\FINAL-CORRECCIÓN-TP3\\ProyectoSoftware_TP2_Correccion\\Domain\\Domain.csproj",
       "packagesPath": "C:\\Users\\Maxi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Maxi\\Desktop\\Proyecto\\ProyectoSoftware_TP2_Corrección\\ProyectoSoftware_TP2\\Domain\\obj\\",
+      "outputPath": "C:\\Users\\Maxi\\Desktop\\Proyecto\\FINAL-CORRECCIÓN-TP3\\ProyectoSoftware_TP2_Correccion\\Domain\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
