@@ -70,7 +70,7 @@ Sigue estos pasos para ejecutar el proyecto en tu entorno local:
 
 1. **Clonar el repositorio:**
    ```bash
-   git clone https://github.com/tu-usuario/ProyectoSoftware_TP2_Correccion.git
+   git clone https://github.com/MaximilianoGimenez0/ProjectProposals_backend.git
    cd ProyectoSoftware_TP2_Correccion
    ```
 
