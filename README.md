@@ -1,116 +1,138 @@
-# 🚀 Sistema de Gestión y Aprobación de Proyectos
+# 🚀 Project Proposals Dashboard
 
-![.NET](https://img.shields.io/badge/.NET-8.0-512BD4?style=for-the-badge&logo=dotnet&logoColor=white)
-![C#](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white)
-![Entity Framework Core](https://img.shields.io/badge/EF_Core-0078D4?style=for-the-badge&logo=nuget&logoColor=white)
-![Clean Architecture](https://img.shields.io/badge/Architecture-Clean%20Architecture-4CAF50?style=for-the-badge)
-![CQRS](https://img.shields.io/badge/Pattern-CQRS-FF9800?style=for-the-badge)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 
-Un robusto sistema backend diseñado para gestionar, evaluar y realizar el seguimiento del ciclo de vida de propuestas de proyectos. Desarrollado en **C# (.NET 8)**, el proyecto implementa rigurosamente **Clean Architecture** y el patrón **CQRS**, garantizando un código altamente escalable, mantenible y testeable.
+> Una aplicación frontend modular y ligera diseñada para la gestión, presentación y seguimiento de propuestas de proyectos técnicos y académicos.
+
+---
 
 ## 📸 Preview
 
-> 💡 **Nota:** *[Espacio reservado para un GIF o demostración en video navegando por la interfaz de la aplicación]*
+> 💡 *Espacio reservado para capturas de pantalla del dashboard, vistas de proyectos o un GIF de demostración.*
 
-* **Screenshots:** *[Añadir capturas de la consola o la ejecución de los menús]*
-* **Demo/Video:** *[Enlace a YouTube o GIF incrustado]*
+---
 
 ## 📖 Descripción
 
-Este proyecto nace con la necesidad de resolver la complejidad en los flujos de aprobación dentro de organizaciones o entornos académicos. Permite definir reglas de aprobación, asignar roles jerárquicos a los usuarios (evaluadores, administradores) y transicionar propuestas de proyectos a través de distintos estados de forma segura y auditada.
+Este repositorio contiene la capa de presentación (Frontend) de un sistema de **Project Proposals**. La aplicación permite a los usuarios gestionar propuestas de desarrollo, revisar su estado actual y categorizarlas por área técnica. 
 
-**¿Qué valor aporta?**
-Centraliza la lógica de negocio compleja en un dominio puro, separando las responsabilidades de lectura y escritura. Esto hace que el sistema sea fácilmente adaptable a cualquier interfaz futura (Web API, Mobile, Desktop) sin modificar el núcleo de la aplicación.
+El mayor valor de este proyecto radica en su **arquitectura y calidad técnica**. En lugar de depender de frameworks pesados, el sistema está construido íntegramente con **Vanilla JavaScript**, demostrando un dominio sólido y profundo de los fundamentos web, manipulación eficiente del DOM y patrones de diseño de software aplicados en el frontend.
+
+---
 
 ## ✨ Características Principales
 
-* **Gestión de Propuestas:** Creación, edición y seguimiento de `ProjectProposals`.
-* **Motor de Aprobaciones:** Flujos configurables mediante `ApprovalRules` y `ProjectApprovalSteps`.
-* **Gestión de Usuarios y Roles:** Administración de `Users`, `ApproverRoles` y `Areas`.
-* **Trazabilidad:** Historial de estados (`ApprovalStatus`) para cada propuesta.
-* **Entity Framework Core Fluent API:** Configuración para cada entidad para asegurar la persistencia.
-* **Validación de Datos:** DTOs con reglas de validación integradas para garantizar la integridad de las solicitudes antes de procesar los casos de uso.
-* **Data Seeding:** Población automática de datos iniciales para facilitar pruebas locales.
+* **Gestión de Propuestas:** Visualización detallada y presentación de nuevos proyectos (`PresentProject.js`).
+* **Sistema de Usuarios:** Manejo de perfiles y sesiones (`User.js`, `Users.js`).
+* **Categorización Dinámica:** Filtrado y visualización inteligente basada en estado y tipo de área (`Area.js`, `Status.js`, `Type.js`).
+* **Feedback Reactivo:** Sistema de notificaciones e interacciones en tiempo real con el usuario (`Feedback.js`).
+* **Renderizado de Badges:** Generación automática de etiquetas visuales para identificar el contexto de cada propuesta (`Badges.js`).
+
+---
 
 ## 🛠️ Tecnologías Utilizadas
 
-**Backend:**
-* **Framework:** .NET 8.0 / C# 12
-* **Patrones Arquitectónicos:** Clean Architecture, CQRS, Repository Pattern
-* **Validaciones:** ASP.NET Core Data Annotations para validación de DTOs de entrada
-  
-**Base de Datos:**
-* **ORM:** Entity Framework Core
-* **Migraciones:** Code-First approach
+### Frontend
+* **JavaScript (ES6+)**: Lógica core, modularidad y manipulación del DOM sin dependencias.
+* **HTML5 Semántico**: Estructura base de la aplicación (`index.html`).
+* **CSS3**: Estilos nativos (`styles.css`).
 
-**Dev Tools:**
-* **Control de Versiones:** Git
-* **IDE:** Visual Studio / JetBrains Rider
+### Arquitectura & Patrones
+* **Service/Repository Pattern**: Abstracción total de las llamadas HTTP hacia el backend.
+* **Component-Based UI**: Separación lógica de la interfaz en módulos independientes.
+
+---
 
 ## 🏗️ Arquitectura del Proyecto
 
-El proyecto sigue una estructura estricta de **Clean Architecture** dividida en 4 capas principales:
+El proyecto sigue una arquitectura por capas muy clara. Esta separación aísla las responsabilidades, lo que facilita el mantenimiento, el testing y prepararía el terreno para una eventual migración a un framework declarativo.
 
 ```mermaid
 graph TD
-    A[ProjectApproval<br/>Presentation / Console UI] --> B(Application<br/>CQRS, DTOs, Services)
-    C[Infrastructure<br/>EF Core, Repositories] --> B
-    B --> D((Domain<br/>Entities, Interfaces))
-    C --> D
+    UI[👤 Interfaz de Usuario] --> C[🧩 Components Layer]
+    C --> S[⚙️ Services Layer]
+    S --> API[🌐 API REST Backend]
+    
+    subgraph Frontend App
+    C -.->|Renderiza| UI
+    C -.->|Usa utilidades| U[🛠️ Scripts / Helpers]
+    end
 ```
 
-* **`Domain`**: Contiene las entidades del negocio (`ProjectProposal`, `User`, `ApprovalRule`, etc.) y las abstracciones de los repositorios. No tiene dependencias externas.
-* **`Application`**: Implementa los casos de uso mediante **CQRS** (carpetas `Commands` y `Queries` separadas por entidad). Contiene DTOs y validadores.
-* **`Infrastructure`**: Implementa la persistencia de datos. Contiene el `ProjectApprovalDbContext`, configuraciones de Fluent API y las implementaciones concretas de los repositorios.
-* **`ProjectApproval`**: La capa de presentación. Una aplicación de consola interactiva con submenús, inputs validados y un `DataSeeder` para inicializar el sistema.
+---
 
-## 🚀 Instalación y Configuración
+## 📂 Estructura del Proyecto
 
-Sigue estos pasos para ejecutar el proyecto en tu entorno local:
+La organización de directorios refleja un enfoque escalable orientado a dominios:
 
-1. **Clonar el repositorio:**
-   ```bash
-   git clone https://github.com/MaximilianoGimenez0/ProjectProposals_backend.git
-   cd ProyectoSoftware_TP2_Correccion
-   ```
+```text
+ProjectProposals_frontend-main/
+├── index.html            # Entry point de la aplicación
+├── css/
+│   └── styles.css        # Hoja de estilos global
+└── js/
+    ├── main.js           # Orquestador principal e inicialización
+    ├── Components/       # Capa de Interfaz y Lógica UI
+    │   ├── Generic.js    # Componentes base reutilizables
+    │   ├── PresentProject.js
+    │   └── User.js
+    ├── Scripts/          # Utilidades y Helpers UI
+    │   ├── Badges.js     # Generación de etiquetas visuales
+    │   └── Feedback.js   # Manejo de alertas, errores y modales
+    └── Services/         # Capa de Dominio y Comunicación (API)
+        ├── ProjectApi.js # Abstracción de endpoints de proyectos
+        ├── Users.js      # Abstracción de endpoints de usuarios
+        ├── Area.js       # Endpoints de áreas técnicas
+        ├── Status.js     # Endpoints de control de estados
+        └── informationApi.js # Configuración base HTTP y middleware
+```
 
-2. **Restaurar dependencias:**
-   ```bash
-   dotnet restore
-   ```
-
-3. **Configurar la base de datos:**
-   Asegúrate de que tu cadena de conexión esté configurada en `ProjectApproval/appsettings.json`. Luego, aplica las migraciones:
-   ```bash
-   dotnet ef database update --project Infrastructure --startup-project ProjectApproval
-   ```
-
-4. **Ejecutar el proyecto:**
-   ```bash
-   dotnet run --project ProjectApproval.Api
-   ```
-
-## 💻 Uso de la Aplicación
-
-Al iniciar la aplicación, el `DataSeeder` poblará la base de datos con información inicial (roles, estados, reglas). Por lo tanto el servidor quedará levantado con los endpoints activos.
+---
 
 ## 🧠 Decisiones Técnicas
 
-* **CQRS (Command Query Responsibility Segregation):** Se decidió separar las operaciones de lectura (Queries) de las de escritura (Commands) en la capa de `Application`. Esto maximiza la claridad del código, facilita el testing unitario y prepara el sistema para escalar a nivel de rendimiento.
-* **Repository Pattern:** Oculta la complejidad de Entity Framework Core detrás de interfaces definidas en el dominio. Esto permite cambiar el origen de datos o mockear la base de datos fácilmente en el futuro.
-* **Data Seeding Controlado:** Se incluyó un mecanismo en el arranque para garantizar que entidades base (como `ApprovalStatuses` fijos) existan siempre, mejorando la experiencia de desarrollo (DX).
+* **Desacoplamiento de la API (Service Layer):** Se diseñó un directorio `Services/` dedicado exclusivamente a las peticiones HTTP. Esto evita acoplar la lógica de red con la manipulación de la vista, permitiendo cambiar la URL base, headers o la implementación fetch en un solo lugar (`informationApi.js`).
+* **Modularidad Vanilla:** El uso de módulos separados para componentes UI (`js/Components/`) demuestra la aplicación de principios SOLID en JavaScript puro, evitando el "Spaghetti Code" común en proyectos sin frameworks.
+* **Manejo Centralizado de Estado Visual:** La extracción de comportamientos visuales repetitivos a scripts como `Badges.js` y `Feedback.js` mantiene los componentes principales limpios y enfocados en su caso de uso principal.
+
+---
+
+## 🚀 Instalación y Configuración
+
+1. **Clonar el repositorio:**
+   ```bash
+   git clone https://github.com/tu-usuario/ProjectProposals_frontend.git
+   ```
+
+2. **Ejecución local:**
+   Al ser una arquitectura Vanilla SPA (Single Page Application), no requiere procesos de build. Puedes levantarlo usando cualquier servidor estático.
+   * Usando la extensión *Live Server* en VSCode.
+   * Usando un módulo de Python:
+     ```bash
+     python -m http.server 8000
+     ```
+
+3. **Conexión con Backend (Supuesto):**
+   Asegúrate de configurar la URL de la API (Backend) en la capa de servicios, apuntando a tu servidor o entorno local.
+
+---
 
 ## 🚀 Mejoras Futuras
 
-* **Autenticación y Autorización:** Implementar un sistema de autenticación basado en **JWT (JSON Web Tokens)** para gestionar la identidad de los usuarios y proteger endpoints mediante autorización basada en tokens, incorporando validación de credenciales, expiración de tokens y control de acceso a recursos protegidos.
-* **Despliegue Cloud:** Dockerizar la aplicación y configurar un pipeline CI/CD para su despliegue en infraestructuras en la nube (ej. **AWS**), permitiendo una ejecución distribuida y de alta disponibilidad.
-* **Cobertura de Pruebas:** Implementar tests unitarios para los Handlers de Application utilizando `xUnit` y `Moq`.
+* Implementación de un bundler (como Vite) para optimización, minificación de assets y ofuscación de código de cara a producción.
+* Adición de tipado estático progresivo mediante JSDoc para mejorar la experiencia de desarrollo (DX).
+* Integración de testing unitario para la lógica de negocio en la capa `Services`.
+
+---
 
 ## 👨‍💻 Autor
 
-**Maximiliano Giménez**  
-*Fullstack / Cloud Developer*
+**Maxi**  
+*Fullstack Developer | Estudiante de Ingeniería en Informática*  
+📍 Buenos Aires, Argentina  
+🌎 Trilingüe (Español, Inglés, Portugués)
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/tu-perfil/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/tu-perfil-aqui)
 [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/tu-usuario)
-[![Portfolio](https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=Dev.to&logoColor=white)](https://tu-portfolio.com)
