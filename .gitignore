@@ -1,0 +1,41 @@
+# Visual Studio
+.vs/
+
+# Build
+bin/
+obj/
+
+# Rider
+.idea/
+
+# VS Code
+.vscode/
+
+# Archivos de usuario
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Logs
+*.log
+
+# Archivos temporales
+*.tmp
+*.temp
+
+# Configuración local
+appsettings.Development.json
+
+# Publicaciones
+publish/
+
+# Entity Framework
+*.dbmdl
+
+# Paquetes
+packages/
+
+# Windows
+Thumbs.db
+Desktop.ini
