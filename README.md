@@ -1,138 +1,163 @@
-# 🚀 Project Proposals Dashboard
+# 🚀 Project Proposals API
 
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+> Un motor backend avanzado para la gestión, evaluación y orquestación de flujos de aprobación de propuestas de proyectos institucionales.
 
-> Una aplicación frontend modular y ligera diseñada para la gestión, presentación y seguimiento de propuestas de proyectos técnicos y académicos.
-
----
-
-## 📸 Preview
-
-> 💡 *Espacio reservado para capturas de pantalla del dashboard, vistas de proyectos o un GIF de demostración.*
+![C#](https://img.shields.io/badge/c%23-%23239120.svg?style=for-the-badge&logo=c-sharp&logoColor=white)
+![.NET](https://img.shields.io/badge/.NET-5C2D91?style=for-the-badge&logo=.net&logoColor=white)
+![Entity Framework Core](https://img.shields.io/badge/EF%20Core-31A8FF?style=for-the-badge&logo=dotnet&logoColor=white)
+![Clean Architecture](https://img.shields.io/badge/Clean%20Architecture-Success?style=for-the-badge)
 
 ---
 
-## 📖 Descripción
+# 📸 Preview
 
-Este repositorio contiene la capa de presentación (Frontend) de un sistema de **Project Proposals**. La aplicación permite a los usuarios gestionar propuestas de desarrollo, revisar su estado actual y categorizarlas por área técnica. 
-
-El mayor valor de este proyecto radica en su **arquitectura y calidad técnica**. En lugar de depender de frameworks pesados, el sistema está construido íntegramente con **Vanilla JavaScript**, demostrando un dominio sólido y profundo de los fundamentos web, manipulación eficiente del DOM y patrones de diseño de software aplicados en el frontend.
+> 💡 **Espacio reservado para Demo:** Aquí puedes incluir un GIF o capturas mostrando las pruebas de los endpoints en Swagger UI o el flujo de una petición a través de un cliente REST como Postman/Insomnia.
 
 ---
 
-## ✨ Características Principales
+# 📖 Descripción
 
-* **Gestión de Propuestas:** Visualización detallada y presentación de nuevos proyectos (`PresentProject.js`).
-* **Sistema de Usuarios:** Manejo de perfiles y sesiones (`User.js`, `Users.js`).
-* **Categorización Dinámica:** Filtrado y visualización inteligente basada en estado y tipo de área (`Area.js`, `Status.js`, `Type.js`).
-* **Feedback Reactivo:** Sistema de notificaciones e interacciones en tiempo real con el usuario (`Feedback.js`).
-* **Renderizado de Badges:** Generación automática de etiquetas visuales para identificar el contexto de cada propuesta (`Badges.js`).
+**Project Proposals API** es una solución Backend robusta diseñada para resolver el problema de trazabilidad y burocracia en la aprobación de proyectos corporativos. 
 
----
+Muchas organizaciones sufren de procesos de validación desordenados y difíciles de rastrear. Este sistema centraliza el ciclo de vida de una propuesta, definiendo dinámicamente quién debe aprobarla basándose en **reglas de negocio** (`ApprovalRules`), **roles de los aprobadores** (`ApproverRoles`) y el estado actual del flujo (`ProjectApprovalStep`). 
 
-## 🛠️ Tecnologías Utilizadas
-
-### Frontend
-* **JavaScript (ES6+)**: Lógica core, modularidad y manipulación del DOM sin dependencias.
-* **HTML5 Semántico**: Estructura base de la aplicación (`index.html`).
-* **CSS3**: Estilos nativos (`styles.css`).
-
-### Arquitectura & Patrones
-* **Service/Repository Pattern**: Abstracción total de las llamadas HTTP hacia el backend.
-* **Component-Based UI**: Separación lógica de la interfaz en módulos independientes.
+Este proyecto refleja un fuerte dominio en patrones de diseño empresariales, arquitectura de software orientada a la mantenibilidad y estándares de Clean Code.
 
 ---
 
-## 🏗️ Arquitectura del Proyecto
+# ✨ Características Principales
 
-El proyecto sigue una arquitectura por capas muy clara. Esta separación aísla las responsabilidades, lo que facilita el mantenimiento, el testing y prepararía el terreno para una eventual migración a un framework declarativo.
+- **⚙️ Motor de Flujos de Aprobación:** Orquestación de pasos secuenciales y transiciones de estado a través de `ApprovalRules` y `ApprovalStatuses`.
+- **📂 Gestión de Propuestas:** Flujo completo de creación, configuración y lectura de `ProjectProposals`.
+- **👥 Sistema de Roles de Revisión:** Control y asignación de revisores mediante la entidad `ApproverRoles`.
+- **🗂️ Taxonomía Dinámica:** Clasificación estructural de los proyectos a través de `Areas` y `ProjectTypes`.
+- **🛠️ CLI Data Seeder Integrado:** Una aplicación de consola adjunta (`ConsoleInteractions` / `FirstSetupBuild`) diseñada para inicializar la base de datos de manera rápida en entornos de desarrollo local.
+
+---
+
+# 🛠️ Tecnologías Utilizadas
+
+## Backend & Core
+- **C# & .NET:** Lenguaje tipado de alto rendimiento para el desarrollo de la lógica central y la API REST.
+- **ASP.NET Core Web API:** Exposición de endpoints HTTP mediante Controladores (`ProjectController`, `InformationController`).
+
+## Database
+- **Entity Framework Core:** ORM moderno utilizado para el mapeo objeto-relacional y la gestión del acceso a datos.
+- **Fluent API:** Configuración estricta del esquema de base de datos a nivel de clases separadas (`Configurations`), sin contaminar el dominio.
+
+## Architecture & Design Patterns
+- **Clean Architecture:** Separación estricta de responsabilidades en 4 capas (Domain, Application, Infrastructure, Presentation/API).
+- **CQRS Pattern:** Segregación profunda de operaciones separando Comandos (escritura) y Consultas (lectura) dentro de la capa `Application`.
+- **Repository Pattern:** Abstracción completa de la persistencia mediante interfaces ubicadas en el dominio, asegurando bajo acoplamiento.
+
+---
+
+# 🏗️ Arquitectura del Proyecto
+
+El sistema fue diseñado aplicando los principios de **Clean Architecture** fuertemente acoplados a **CQRS**, lo que garantiza que las reglas de negocio base sean completamente independientes de cualquier framework, interfaz o base de datos externa.
 
 ```mermaid
 graph TD
-    UI[👤 Interfaz de Usuario] --> C[🧩 Components Layer]
-    C --> S[⚙️ Services Layer]
-    S --> API[🌐 API REST Backend]
-    
-    subgraph Frontend App
-    C -.->|Renderiza| UI
-    C -.->|Usa utilidades| U[🛠️ Scripts / Helpers]
-    end
+    UI[Cliente / Web / CLI] -->|HTTP REST| API[API Layer]
+    API -->|Commands & Queries| APP[Application Layer]
+    APP -->|Uses Entities| DOM[Domain Layer]
+    APP -->|Interfaces| DOM
+    INF[Infrastructure Layer] -.->|Implements Repositories| DOM
+    INF -->|EF Core DbContext| DB[(Relational Database)]
 ```
+
+### Explicación de Capas:
+- 🟣 **Domain:** El corazón del negocio. Contiene las entidades puras (`User`, `ProjectProposal`, `ProjectApprovalStep`, etc.) y las interfaces de los repositorios. Cero dependencias externas.
+- 🔵 **Application:** Aloja la lógica de negocio estructurada en carpetas de **Commands** (`Add`, `Update`, `Delete`) y **Queries** (`GetAll`, `GetById`), además de DTOs y abstracciones de servicios.
+- 🟢 **Infrastructure:** Capa de acceso externo. Implementa las interfaces del dominio, maneja la persistencia con `ProjectApprovalDbContext` e inyecta la lógica de las base de datos.
+- 🟡 **Presentation:** Puntos de entrada del usuario o cliente, en este caso representados por la Web API (`ProjectApproval.Api`) y la herramienta de Consola (`ProjectApproval`).
 
 ---
 
-## 📂 Estructura del Proyecto
-
-La organización de directorios refleja un enfoque escalable orientado a dominios:
+# 📂 Estructura del Proyecto
 
 ```text
-ProjectProposals_frontend-main/
-├── index.html            # Entry point de la aplicación
-├── css/
-│   └── styles.css        # Hoja de estilos global
-└── js/
-    ├── main.js           # Orquestador principal e inicialización
-    ├── Components/       # Capa de Interfaz y Lógica UI
-    │   ├── Generic.js    # Componentes base reutilizables
-    │   ├── PresentProject.js
-    │   └── User.js
-    ├── Scripts/          # Utilidades y Helpers UI
-    │   ├── Badges.js     # Generación de etiquetas visuales
-    │   └── Feedback.js   # Manejo de alertas, errores y modales
-    └── Services/         # Capa de Dominio y Comunicación (API)
-        ├── ProjectApi.js # Abstracción de endpoints de proyectos
-        ├── Users.js      # Abstracción de endpoints de usuarios
-        ├── Area.js       # Endpoints de áreas técnicas
-        ├── Status.js     # Endpoints de control de estados
-        └── informationApi.js # Configuración base HTTP y middleware
+ProjectProposals_backend-main/
+├── 📁 Application/                # Capa de aplicación (CQRS)
+│   ├── 📁 <Entity>/Commands/      # Lógica de Mutación (Add, Delete, Update)
+│   ├── 📁 <Entity>/Queries/       # Lógica de Lectura (GetAll, GetById)
+│   ├── 📁 Dtos/                   # Data Transfer Objects
+│   ├── 📁 Exceptions/             # Control y mapeo de excepciones
+│   └── 📁 Interfaces/             # Contratos principales
+├── 📁 Domain/                     # Capa central (Enterprise Business Rules)
+│   ├── 📁 Entities/               # Modelos ricos del dominio
+│   └── 📁 Interfaces/             # Contratos para repositorios
+├── 📁 Infrastructure/             # Capa de Infraestructura
+│   ├── 📁 Migrations/             # Historial de versiones EF Core
+│   └── 📁 Persistence/            # DbContext, Repositorios y configuraciones
+├── 📁 ProjectApproval.Api/        # Capa de Presentación REST
+│   └── 📁 Controllers/            # Endpoints expuestos al exterior
+└── 📁 ProjectApproval/            # CLI y utilidades
+    ├── 📁 ConsoleInteractions/    # Menús e inputs
+    └── 📁 FirstSetupBuild/        # Data Seeder (DataSeeder.cs)
 ```
 
 ---
 
-## 🧠 Decisiones Técnicas
+# 🚀 Instalación y Configuración
 
-* **Desacoplamiento de la API (Service Layer):** Se diseñó un directorio `Services/` dedicado exclusivamente a las peticiones HTTP. Esto evita acoplar la lógica de red con la manipulación de la vista, permitiendo cambiar la URL base, headers o la implementación fetch en un solo lugar (`informationApi.js`).
-* **Modularidad Vanilla:** El uso de módulos separados para componentes UI (`js/Components/`) demuestra la aplicación de principios SOLID en JavaScript puro, evitando el "Spaghetti Code" común en proyectos sin frameworks.
-* **Manejo Centralizado de Estado Visual:** La extracción de comportamientos visuales repetitivos a scripts como `Badges.js` y `Feedback.js` mantiene los componentes principales limpios y enfocados en su caso de uso principal.
-
----
-
-## 🚀 Instalación y Configuración
+Para poner en marcha la solución en un entorno de desarrollo, sigue los siguientes pasos:
 
 1. **Clonar el repositorio:**
    ```bash
-   git clone https://github.com/tu-usuario/ProjectProposals_frontend.git
+   git clone https://github.com/tu-usuario/ProjectProposals_backend.git
+   cd ProjectProposals_backend-main
    ```
 
-2. **Ejecución local:**
-   Al ser una arquitectura Vanilla SPA (Single Page Application), no requiere procesos de build. Puedes levantarlo usando cualquier servidor estático.
-   * Usando la extensión *Live Server* en VSCode.
-   * Usando un módulo de Python:
-     ```bash
-     python -m http.server 8000
-     ```
+2. **Restaurar las dependencias de NuGet:**
+   ```bash
+   dotnet restore ProjectApproval.sln
+   ```
 
-3. **Conexión con Backend (Supuesto):**
-   Asegúrate de configurar la URL de la API (Backend) en la capa de servicios, apuntando a tu servidor o entorno local.
+3. **Configurar la base de datos:**
+   Revisa tu cadena de conexión (ConnectionString) en el archivo `appsettings.json` ubicado dentro del proyecto `ProjectApproval.Api`.
+
+4. **Aplicar las migraciones (Crear la DB):**
+   ```bash
+   dotnet ef database update --project Infrastructure --startup-project ProjectApproval.Api
+   ```
+
+5. **Ejecutar la API:**
+   ```bash
+   dotnet run --project ProjectApproval.Api
+   ```
+
+> 💡 **Tip:** Alternativamente, puedes ejecutar el proyecto principal de Consola (`ProjectApproval`) para lanzar los flujos integrados de primera configuración y seeding.
 
 ---
 
-## 🚀 Mejoras Futuras
+# 🧠 Decisiones Técnicas y Valor Aportado
 
-* Implementación de un bundler (como Vite) para optimización, minificación de assets y ofuscación de código de cara a producción.
-* Adición de tipado estático progresivo mediante JSDoc para mejorar la experiencia de desarrollo (DX).
-* Integración de testing unitario para la lógica de negocio en la capa `Services`.
+1. **Segregación de Responsabilidades con CQRS:**
+   En lugar de usar grandes servicios con lógicas superpuestas, la capa de Aplicación está atomizada en `Commands` y `Queries` específicos por entidad. Esto prepara la aplicación para ser altamente escalable (pudiendo tener lecturas y escrituras manejadas con diferentes optimizaciones).
+   
+2. **Uso de Fluent API por encima de Data Annotations:**
+   La configuración de las restricciones de la base de datos (longitud de strings, claves primarias/foráneas) se ha movido por completo a la carpeta `Configurations` dentro de la Infraestructura. Esto mantiene las Entidades del Dominio impecables, sin ensuciarse con atributos ligados a Entity Framework.
+
+3. **Inyección de Dependencias y Principios SOLID:**
+   El flujo de control depende 100% de abstracciones (interfaces de repositorios y manejadores). Esto facilita la capacidad de mockear servicios para realizar testeos eficientes en el futuro.
 
 ---
 
-## 👨‍💻 Autor
+# 🚀 Mejoras Futuras
 
-**Maxi**  
-*Fullstack Developer | Estudiante de Ingeniería en Informática*  
-📍 Buenos Aires, Argentina  
-🌎 Trilingüe (Español, Inglés, Portugués)
+- [ ] Incorporar `MediatR` explícito (o un middleware de Dispatcher) para optimizar el ruteo de comandos y consultas.
+- [ ] Integrar validación robusta a través de `FluentValidation` como Pipeline Behaviors antes de que el comando alcance el Handler.
+- [ ] Implementar un sistema de Autenticación y Autorización JWT.
+- [ ] Desarrollo de Suite de Testing Automático (Unitario y de Integración) usando `xUnit` y `Moq`.
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/tu-perfil-aqui)
+---
+
+# 👨‍💻 Autor
+
+**[Tu Nombre]**  
+*Software Engineer | Backend Developer*
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/tu-perfil)
 [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/tu-usuario)
+[![Portfolio](https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=Reverbnation&logoColor=white)](https://tu-portfolio.com)
