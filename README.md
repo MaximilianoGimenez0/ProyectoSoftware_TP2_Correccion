@@ -11,8 +11,8 @@
 
 # 📸 Preview
 
-> 💡 **Espacio reservado para Demo:** Aquí puedes incluir un GIF o capturas mostrando las pruebas de los endpoints en Swagger UI o el flujo de una petición a través de un cliente REST como Postman/Insomnia.
-
+<img width="1447" height="654" alt="image" src="https://github.com/user-attachments/assets/54876219-d480-47cc-b123-cbfbac84ce11" />
+<img width="1435" height="1394" alt="image" src="https://github.com/user-attachments/assets/a254dfcd-ea4e-4865-90e8-4cca7cd76f95" />
 ---
 
 # 📖 Descripción
